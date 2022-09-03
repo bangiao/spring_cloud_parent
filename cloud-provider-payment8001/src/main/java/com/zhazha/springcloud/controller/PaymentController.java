@@ -1,6 +1,6 @@
 package com.zhazha.springcloud.controller;
 
-import com.zhazha.springcloud.entities.CommonResult;
+import com.zhazha.springcloud.dto.CommonResult;
 import com.zhazha.springcloud.entities.Payment;
 import com.zhazha.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
