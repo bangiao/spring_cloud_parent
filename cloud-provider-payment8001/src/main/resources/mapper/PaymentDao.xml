@@ -9,7 +9,7 @@
         insert into payment(serial) values(#{serial});
     </insert>
 
-    <select id="getPaymentByID" parameterType="Long" resultMap="BaseResultMap">
+    <select id="getPaymentById" parameterType="Long" resultMap="BaseResultMap">
         select * from payment where id=#{id};
     </select>
 </mapper>
