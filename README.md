@@ -1,4 +1,4 @@
-# eureka 集群方式
+# eureka server 集群方式
 
 ![](https://yangfan-typroa.oss-cn-beijing.aliyuncs.com/image-20220123123020106.png "eureka集群原理图")
 
@@ -59,4 +59,20 @@ eureka:
 ```
 
 > 修改的地方就两个: ① port ② hostname ③ defaultZone
+
+## eureka提供端改造
+
+8001 需要同时知道两个 eureka server 列表, 所以 `defaultZone` 需要改造
+
+`defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka`
+
+> 注意: 中间使用 逗号 隔开, 而不是 封号
+
+## eureka 消费端改造
+
+80 也是一样: `defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka`
+
+这样. eureka server集群改造完毕
+
+# server 提供方集群
 
