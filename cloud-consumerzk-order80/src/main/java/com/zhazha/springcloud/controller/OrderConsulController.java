@@ -8,14 +8,14 @@ import javax.annotation.Resource;
 
 @RestController
 public class OrderConsulController {
-    public static final String INVOKE_URL = "http://consul-provider-payment";
+    public static final String INVOKE_URL = "http://zookeeper-provider-payment";
 
     @Resource
     private RestTemplate restTemplate;
 
-    @GetMapping(value = "/consumer/payment/consul")
+    @GetMapping(value = "/consumer/payment/zk")
     public String paymentInfo() {
-        String result = restTemplate.getForObject(INVOKE_URL + "/payment/consul", String.class);
+        String result = restTemplate.getForObject(INVOKE_URL + "/payment/zk", String.class);
         System.out.println("消费者调用支付服务(consule)--->result:" + result);
         return result;
     }

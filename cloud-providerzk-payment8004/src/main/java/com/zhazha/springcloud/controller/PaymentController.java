@@ -13,8 +13,8 @@ public class PaymentController {
 	@Value("${server.port}")
 	private String serverPort;
 	
-	@GetMapping("/payment/consul")
+	@GetMapping("/payment/zk")
 	public String paymentInfo() {
-		return "springcloud with consul: " + serverPort + "\t\t" + UUID.randomUUID().toString();
+		return "springcloud with zk: " + serverPort + "\t\t" + UUID.randomUUID();
 	}
 }

@@ -9,18 +9,30 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-providerconsul-payment8006</artifactId>
+    <artifactId>cloud-consumerzk-order80</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
-
     <dependencies>
-        <!--SpringCloud consul-server -->
+        <!-- SpringBoot整合zookeeper客户端,这里不再使用Eureka进行服务注册，所以这里导入的是Zookeeper的相关依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
+            <!-- 先排除自带的zookeeper -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.zookeeper</groupId>
+                    <artifactId>zookeeper</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--添加zookeeper3.8.0版本，注意这里要和 zookeeper 应用启动的版本一致 -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.8.0</version>
         </dependency>
         <!-- SpringBoot整合Web组件 -->
         <dependency>

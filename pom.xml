@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>cloud-api-commons</module>
-        <module>cloud-providerconsul-payment8006</module>
-        <module>cloud-consumerconsul-order80</module>
+        <module>cloud-providerzk-payment8004</module>
+        <module>cloud-consumerzk-order80</module>
     </modules>
 
     <properties>
