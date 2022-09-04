@@ -1,84 +1,62 @@
-# springcloud_study_parent
+# eureka 集群方式
 
-微服务相关知识学习主分支
+![](https://yangfan-typroa.oss-cn-beijing.aliyuncs.com/image-20220123123020106.png "eureka集群原理图")
 
-# 创建一个 eureka server
+根据上面这幅图我们知道 eureka server 和 eureka provider 可以集群
 
-单机版的 Eureka server 配置详情
+## hosts 修改
 
-cloud-eureka-server7001 是eureka 的服务端
+目录: C:\Windows\System32\drivers\etc\hosts
 
-和 nacos 一样, 但 nacos 只需要下载 github server 端就好, eureka 却需要自己创建一个server项目
+```text
+127.0.0.1 eureka7001.com
+127.0.0.1 eureka7002.com
+```
 
-maven 包
+## eureka server 集群
 
-`spring-cloud-starter-netflix-eureka-server`
+1. 创建 `cloud-eureka-server7002` 项目, 给 `eureka server` 添加新的集群
+2. **copy** `cloud-eureka-server7001`的 `pom.xml` 和 `application.yml` 配置文件
+3. 修改`cloud-eureka-server7001` 和 `cloud~7002`的`application.yml`
 
-注解
+> 这里需要注意的是, eureka server 集群的方式主要是**相互交换地址**
 
-eureka 整合 `springcloud` 需要在启动类上使用到注解 `@EnableEurekaServer`
-
-主要作用还是标记, 标记一个项目为 Eureka 的 server 项目
-
-application配置
+- `cloud-eureka-server7001`的`application.yml`:
 
 ```yml
-#false表示不向注册中心注册自己。
-register-with-eureka: false
-#false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
-fetch-registry: false
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: eureka7001.com #eureka服务端的实例名称
+  client:
+    #false表示不向注册中心注册自己。
+    register-with-eureka: false
+    #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    fetch-registry: false
+    service-url:
+      #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址。
+      defaultZone: http://eureka7002.com:7002/eureka/
 ```
-需要注意, `eureka server` 本身就是一个 `server`, 所以不需要注册
 
-同时也不需要去检索任何服务
-
-
-# 创建一个注册项目
-
-`cloud-provider-payment8001`
-
-maven 包
-
-`spring-cloud-starter-netflix-eureka-client`
+- `cloud-eureka-server7002`的`application.yml`:
 
 ```yml
-#表示是否将自己注册进EurekaServer默认为true。
-register-with-eureka: true
-#是否从EurekaServer抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
-fetchRegistry: true
+server:
+  port: 7002
+
+eureka:
+  instance:
+    hostname: eureka7002.com #eureka服务端的实例名称
+  client:
+    #false表示不向注册中心注册自己。
+    register-with-eureka: false
+    #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    fetch-registry: false
+    service-url:
+      #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址。
+      defaultZone: http://eureka7001.com:7001/eureka/
 ```
 
-添加注解
+> 修改的地方就两个: ① port ② hostname ③ defaultZone
 
-`@EnableEurekaClient`
-
-标记该项目为 `client`
-
-项目在这里连接上了 server:
-```yml
-defaultZone: http://localhost:7001/eureka
-```
-
-# 创建一个消费端(客户端)
-
-maven:
-
-```xml
-<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-</dependency>
-```
-
-注解: `@EnableEurekaClient`
-
-注册到 eureka server 注册中心: `defaultZone: http://localhost:7001/eureka`
-
-现在按照步骤启动项目:
-- server7001
-- payment8001
-- order80
-
-分别启动项目
-
-> 注意: 在 `cloud-consumer-order80` 在项目中的 `restTemplate.getForObject(INVOKE_URL + "/payment/get/{id}", CommonResult.class, id);`, 注意这里是 `CommonResult.class` 而不是 `Payment.class`
