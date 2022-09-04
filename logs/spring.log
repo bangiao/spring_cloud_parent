@@ -1,0 +1,402 @@
+2022-09-04 10:39:20.450  INFO 8700 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Starting PaymentMain8001 using Java 11.0.14.1 on DESKTOP-FOS9FAS with PID 8700 (D:\programs\codes\java\springcloud_study_parent\cloud-provider-payment8001\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+2022-09-04 10:39:20.450  INFO 8700 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : No active profile set, falling back to 1 default profile: "default"
+2022-09-04 10:39:21.433  INFO 8700 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0477dcc9-0279-39e4-8d10-f62755d4d711
+2022-09-04 10:39:21.509  INFO 8700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2022-09-04 10:39:21.513  INFO 8700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-04 10:39:21.513  INFO 8700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-04 10:39:21.681  INFO 8700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-04 10:39:21.681  INFO 8700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1225 ms
+2022-09-04 10:39:21.701  INFO 8700 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-09-04 10:39:21.723  INFO 8700 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} inited
+2022-09-04 10:39:23.376  WARN 8700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-09-04 10:39:24.947  INFO 8700 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-04 10:39:24.972  WARN 8700 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-04 10:39:24.978  INFO 8700 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-04 10:39:25.016  INFO 8700 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-04 10:39:25.019  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-09-04 10:39:25.019  INFO 8700 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 10:39:25.021  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-09-04 10:39:25.021  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-09-04 10:39:25.021  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-09-04 10:39:25.021  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-09-04 10:39:25.021  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-09-04 10:39:25.021  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-09-04 10:39:25.021  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-09-04 10:39:25.053  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-09-04 10:39:25.053  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-09-04 10:39:25.054  INFO 8700 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-04 10:39:25.055  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1662259165055 with initial instances count: 1
+2022-09-04 10:39:25.057  INFO 8700 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-PAYMENT-SERVICE with eureka with status UP
+2022-09-04 10:39:25.057  INFO 8700 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662259165057, current=UP, previous=STARTING]
+2022-09-04 10:39:25.058  INFO 8700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 10:39:25.063  INFO 8700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2022-09-04 10:39:25.065  INFO 8700 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8001
+2022-09-04 10:39:25.079  INFO 8700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 10:39:26.502  INFO 8700 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Started PaymentMain8001 in 9.554 seconds (JVM running for 450.069)
+2022-09-04 10:39:26.505  INFO 8700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-09-04 10:39:57.923  INFO 8700 --- [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 10:39:57.923  INFO 8700 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-04 10:39:57.927  INFO 8700 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-09-04 10:39:57.950 DEBUG 8700 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 10:39:57.951 DEBUG 8700 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 10:39:57.954 DEBUG 8700 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 10:39:57.956  INFO 8700 --- [http-nio-8001-exec-1] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 10:44:25.025  INFO 8700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 10:49:25.037  INFO 8700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 10:54:25.052  INFO 8700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 12:41:21.875  INFO 8700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 12:46:21.884  INFO 8700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 12:50:46.299 DEBUG 8700 --- [http-nio-8001-exec-4] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 12:50:46.301 DEBUG 8700 --- [http-nio-8001-exec-4] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 12:50:46.304 DEBUG 8700 --- [http-nio-8001-exec-4] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 12:50:46.305  INFO 8700 --- [http-nio-8001-exec-4] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 12:51:21.892  INFO 8700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 12:51:59.922 DEBUG 8700 --- [http-nio-8001-exec-6] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 12:51:59.922 DEBUG 8700 --- [http-nio-8001-exec-6] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 12:51:59.924 DEBUG 8700 --- [http-nio-8001-exec-6] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 12:51:59.925  INFO 8700 --- [http-nio-8001-exec-6] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 12:52:40.645 DEBUG 8700 --- [http-nio-8001-exec-7] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 12:52:40.645 DEBUG 8700 --- [http-nio-8001-exec-7] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 12:52:40.647 DEBUG 8700 --- [http-nio-8001-exec-7] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 12:52:40.648  INFO 8700 --- [http-nio-8001-exec-7] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 12:54:17.620 DEBUG 8700 --- [http-nio-8001-exec-9] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 12:54:17.621 DEBUG 8700 --- [http-nio-8001-exec-9] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 12:54:17.623 DEBUG 8700 --- [http-nio-8001-exec-9] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 12:54:17.624  INFO 8700 --- [http-nio-8001-exec-9] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 12:56:12.050 DEBUG 8700 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 12:56:12.051 DEBUG 8700 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 12:56:12.052 DEBUG 8700 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 12:56:12.053  INFO 8700 --- [http-nio-8001-exec-1] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 12:56:21.907  INFO 8700 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 12:56:43.357 DEBUG 8700 --- [http-nio-8001-exec-2] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 12:56:43.359 DEBUG 8700 --- [http-nio-8001-exec-2] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 12:56:43.363 DEBUG 8700 --- [http-nio-8001-exec-2] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 12:56:43.363  INFO 8700 --- [http-nio-8001-exec-2] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 12:57:25.924  INFO 8700 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLOUD-PAYMENT-SERVICE with eureka with status DOWN
+2022-09-04 12:57:25.924  INFO 8700 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662267445924, current=DOWN, previous=UP]
+2022-09-04 12:57:25.925  INFO 8700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 12:57:25.936  INFO 8700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 12:58:40.346  INFO 7728 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Starting PaymentMain8001 using Java 11.0.14.1 on DESKTOP-FOS9FAS with PID 7728 (D:\programs\codes\java\springcloud_study_parent\cloud-provider-payment8001\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+2022-09-04 12:58:40.352  INFO 7728 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : No active profile set, falling back to 1 default profile: "default"
+2022-09-04 12:58:40.646  INFO 7728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-04 12:58:40.647  INFO 7728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-04 12:58:44.480  INFO 7728 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0477dcc9-0279-39e4-8d10-f62755d4d711
+2022-09-04 12:58:46.149  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2022-09-04 12:58:46.175  INFO 7728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-04 12:58:46.176  INFO 7728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-04 12:58:46.951  INFO 7728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-04 12:58:46.952  INFO 7728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6301 ms
+2022-09-04 12:58:47.278  INFO 7728 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-09-04 12:58:47.790  INFO 7728 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-09-04 12:58:54.952  INFO 7728 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-09-04 12:58:55.938  WARN 7728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-09-04 12:58:58.195  INFO 7728 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-04 12:58:58.378  WARN 7728 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-04 12:58:58.388  INFO 7728 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-04 12:58:58.600  INFO 7728 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-04 12:58:58.659  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-09-04 12:58:58.667  INFO 7728 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 12:58:58.697  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-09-04 12:58:58.697  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-09-04 12:58:58.698  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-09-04 12:58:58.698  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-09-04 12:58:58.698  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-09-04 12:58:58.698  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-09-04 12:58:58.699  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-09-04 12:58:59.146  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-09-04 12:58:59.150  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-09-04 12:58:59.153  INFO 7728 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-04 12:58:59.160  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1662267539158 with initial instances count: 0
+2022-09-04 12:58:59.161  INFO 7728 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-PAYMENT-SERVICE with eureka with status UP
+2022-09-04 12:58:59.162  INFO 7728 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662267539162, current=UP, previous=STARTING]
+2022-09-04 12:58:59.166  INFO 7728 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 12:58:59.202  INFO 7728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2022-09-04 12:58:59.203  INFO 7728 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8001
+2022-09-04 12:58:59.245  INFO 7728 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 12:59:00.848  INFO 7728 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Started PaymentMain8001 in 25.575 seconds (JVM running for 31.431)
+2022-09-04 12:59:02.445  INFO 7728 --- [RMI TCP Connection(5)-192.168.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 12:59:02.446  INFO 7728 --- [RMI TCP Connection(5)-192.168.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-04 12:59:02.449  INFO 7728 --- [RMI TCP Connection(5)-192.168.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-09-04 12:59:29.160  INFO 7728 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-09-04 12:59:29.161  INFO 7728 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-09-04 12:59:29.161  INFO 7728 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-09-04 12:59:29.161  INFO 7728 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-09-04 12:59:29.161  INFO 7728 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-09-04 12:59:29.162  INFO 7728 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-09-04 12:59:29.162  INFO 7728 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-09-04 12:59:29.185  INFO 7728 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-09-04 12:59:51.229 DEBUG 7728 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 12:59:51.249 DEBUG 7728 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 12:59:51.267 DEBUG 7728 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 12:59:51.269  INFO 7728 --- [http-nio-8001-exec-1] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:01:58.775 DEBUG 7728 --- [http-nio-8001-exec-3] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:01:58.776 DEBUG 7728 --- [http-nio-8001-exec-3] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:01:58.778 DEBUG 7728 --- [http-nio-8001-exec-3] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:01:58.778  INFO 7728 --- [http-nio-8001-exec-3] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:03:58.716  INFO 7728 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:04:57.619 DEBUG 7728 --- [http-nio-8001-exec-5] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:04:57.619 DEBUG 7728 --- [http-nio-8001-exec-5] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:04:57.621 DEBUG 7728 --- [http-nio-8001-exec-5] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:04:57.622  INFO 7728 --- [http-nio-8001-exec-5] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:05:00.358 DEBUG 7728 --- [http-nio-8001-exec-6] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:05:00.359 DEBUG 7728 --- [http-nio-8001-exec-6] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:05:00.361 DEBUG 7728 --- [http-nio-8001-exec-6] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:05:00.362  INFO 7728 --- [http-nio-8001-exec-6] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:06:16.685  INFO 7728 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLOUD-PAYMENT-SERVICE with eureka with status DOWN
+2022-09-04 13:06:16.685  INFO 7728 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662267976685, current=DOWN, previous=UP]
+2022-09-04 13:06:16.686  INFO 7728 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:06:16.694  INFO 7728 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:06:17.863  INFO 7728 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-09-04 13:06:17.871  INFO 7728 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-09-04 13:06:17.873  INFO 7728 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-09-04 13:06:20.880  INFO 7728 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-09-04 13:06:20.911  INFO 7728 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - deregister  status: 200
+2022-09-04 13:06:20.933  INFO 7728 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-09-04 13:06:33.872  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Starting PaymentMain8001 using Java 11.0.14.1 on DESKTOP-FOS9FAS with PID 9244 (D:\programs\codes\java\springcloud_study_parent\cloud-provider-payment8001\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+2022-09-04 13:06:33.893  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : No active profile set, falling back to 1 default profile: "default"
+2022-09-04 13:06:34.207  INFO 9244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-04 13:06:34.208  INFO 9244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-04 13:06:37.290  INFO 9244 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0477dcc9-0279-39e4-8d10-f62755d4d711
+2022-09-04 13:06:38.327  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2022-09-04 13:06:38.345  INFO 9244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-04 13:06:38.345  INFO 9244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-04 13:06:38.646  INFO 9244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-04 13:06:38.646  INFO 9244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4436 ms
+2022-09-04 13:06:38.769  INFO 9244 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-09-04 13:06:38.972  INFO 9244 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-09-04 13:06:42.368  WARN 9244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-09-04 13:06:43.939  INFO 9244 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-04 13:06:44.044  WARN 9244 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-04 13:06:44.052  INFO 9244 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-04 13:06:44.205  INFO 9244 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-04 13:06:44.423  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-09-04 13:06:44.436  INFO 9244 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:06:44.488  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-09-04 13:06:44.488  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-09-04 13:06:44.488  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-09-04 13:06:44.488  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-09-04 13:06:44.489  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-09-04 13:06:44.489  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-09-04 13:06:44.490  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-09-04 13:06:45.082  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-09-04 13:06:45.086  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-09-04 13:06:45.090  INFO 9244 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-04 13:06:45.098  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1662268005096 with initial instances count: 1
+2022-09-04 13:06:45.099  INFO 9244 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-PAYMENT-SERVICE with eureka with status UP
+2022-09-04 13:06:45.101  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662268005101, current=UP, previous=STARTING]
+2022-09-04 13:06:45.105  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:06:45.153  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2022-09-04 13:06:45.155  INFO 9244 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8001
+2022-09-04 13:06:45.193  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:06:47.567  INFO 9244 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-09-04 13:06:47.643  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Started PaymentMain8001 in 17.485 seconds (JVM running for 21.503)
+2022-09-04 13:06:50.180  INFO 9244 --- [RMI TCP Connection(3)-192.168.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 13:06:50.180  INFO 9244 --- [RMI TCP Connection(3)-192.168.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-04 13:06:50.183  INFO 9244 --- [RMI TCP Connection(3)-192.168.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-09-04 13:06:54.668 DEBUG 9244 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:06:54.751 DEBUG 9244 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:06:54.774 DEBUG 9244 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:06:54.778  INFO 9244 --- [http-nio-8001-exec-1] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:11:44.498  INFO 9244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:14:53.855 DEBUG 9244 --- [http-nio-8001-exec-3] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:14:53.856 DEBUG 9244 --- [http-nio-8001-exec-3] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:14:53.858 DEBUG 9244 --- [http-nio-8001-exec-3] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:14:53.859  INFO 9244 --- [http-nio-8001-exec-3] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:16:34.535 DEBUG 9244 --- [http-nio-8001-exec-5] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:16:34.535 DEBUG 9244 --- [http-nio-8001-exec-5] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:16:34.537 DEBUG 9244 --- [http-nio-8001-exec-5] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:16:34.537  INFO 9244 --- [http-nio-8001-exec-5] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:16:44.505  INFO 9244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:18:10.610 DEBUG 9244 --- [http-nio-8001-exec-9] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:18:10.611 DEBUG 9244 --- [http-nio-8001-exec-9] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:18:10.613 DEBUG 9244 --- [http-nio-8001-exec-9] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:18:10.614  INFO 9244 --- [http-nio-8001-exec-9] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:21:44.513  INFO 9244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:22:52.579  INFO 9244 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLOUD-PAYMENT-SERVICE with eureka with status DOWN
+2022-09-04 13:22:52.587  INFO 9244 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662268972587, current=DOWN, previous=UP]
+2022-09-04 13:22:52.597  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:22:52.650  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:22:55.056  INFO 9244 --- [Thread-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-09-04 13:22:55.070  INFO 9244 --- [Thread-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-09-04 13:22:55.075  INFO 9244 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-09-04 13:22:58.100  INFO 9244 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-09-04 13:22:58.107  INFO 9244 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - deregister  status: 200
+2022-09-04 13:22:58.117  INFO 9244 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-09-04 13:23:01.594  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Starting PaymentMain8001 using Java 11.0.14.1 on DESKTOP-FOS9FAS with PID 9244 (D:\programs\codes\java\springcloud_study_parent\cloud-provider-payment8001\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+2022-09-04 13:23:01.597  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : No active profile set, falling back to 1 default profile: "default"
+2022-09-04 13:23:03.941  INFO 9244 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=66c2d034-5c52-382c-ba18-b84edbaab006
+2022-09-04 13:23:04.138  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2022-09-04 13:23:04.140  INFO 9244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-04 13:23:04.140  INFO 9244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-04 13:23:04.427  INFO 9244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-04 13:23:04.428  INFO 9244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2818 ms
+2022-09-04 13:23:04.471  INFO 9244 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-09-04 13:23:04.506  INFO 9244 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2022-09-04 13:23:07.469  WARN 9244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-09-04 13:23:09.917  INFO 9244 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-04 13:23:09.950  WARN 9244 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-04 13:23:09.968  INFO 9244 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-04 13:23:10.011  INFO 9244 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-04 13:23:10.014  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-09-04 13:23:10.014  INFO 9244 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:23:10.021  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-09-04 13:23:10.022  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-09-04 13:23:10.022  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-09-04 13:23:10.022  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-09-04 13:23:10.022  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-09-04 13:23:10.022  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-09-04 13:23:10.022  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-09-04 13:23:10.047  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-09-04 13:23:10.048  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-09-04 13:23:10.049  INFO 9244 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-04 13:23:10.051  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1662268990051 with initial instances count: 1
+2022-09-04 13:23:10.052  INFO 9244 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-PAYMENT-SERVICE with eureka with status UP
+2022-09-04 13:23:10.052  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662268990052, current=UP, previous=STARTING]
+2022-09-04 13:23:10.053  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:23:10.058  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2022-09-04 13:23:10.059  INFO 9244 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8001
+2022-09-04 13:23:10.074  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:23:11.561  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Started PaymentMain8001 in 13.305 seconds (JVM running for 1005.421)
+2022-09-04 13:23:11.562  INFO 9244 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLOUD-PAYMENT-SERVICE with eureka with status DOWN
+2022-09-04 13:23:11.562  INFO 9244 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662268991562, current=DOWN, previous=UP]
+2022-09-04 13:23:11.562  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:23:11.566  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:23:11.568  INFO 9244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-09-04 13:23:12.484  INFO 9244 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2022-09-04 13:23:12.485  INFO 9244 --- [Thread-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2022-09-04 13:23:12.486  INFO 9244 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-09-04 13:23:15.505  INFO 9244 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-09-04 13:23:15.518  INFO 9244 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - deregister  status: 200
+2022-09-04 13:23:15.534  INFO 9244 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-09-04 13:23:18.150  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Starting PaymentMain8001 using Java 11.0.14.1 on DESKTOP-FOS9FAS with PID 9244 (D:\programs\codes\java\springcloud_study_parent\cloud-provider-payment8001\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+2022-09-04 13:23:18.151  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : No active profile set, falling back to 1 default profile: "default"
+2022-09-04 13:23:20.859  INFO 9244 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0477dcc9-0279-39e4-8d10-f62755d4d711
+2022-09-04 13:23:20.969  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2022-09-04 13:23:20.970  INFO 9244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-04 13:23:20.971  INFO 9244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-04 13:23:21.119  INFO 9244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-04 13:23:21.119  INFO 9244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2960 ms
+2022-09-04 13:23:21.147  INFO 9244 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-09-04 13:23:21.174  INFO 9244 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2022-09-04 13:23:23.201  WARN 9244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-09-04 13:23:25.183  INFO 9244 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-04 13:23:25.213  WARN 9244 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-04 13:23:25.218  INFO 9244 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-04 13:23:25.262  INFO 9244 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-04 13:23:25.265  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-09-04 13:23:25.265  INFO 9244 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:23:25.266  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-09-04 13:23:25.267  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-09-04 13:23:25.267  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-09-04 13:23:25.267  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-09-04 13:23:25.267  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-09-04 13:23:25.267  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-09-04 13:23:25.267  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-09-04 13:23:25.288  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-09-04 13:23:25.289  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-09-04 13:23:25.290  INFO 9244 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-04 13:23:25.291  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1662269005291 with initial instances count: 1
+2022-09-04 13:23:25.292  INFO 9244 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-PAYMENT-SERVICE with eureka with status UP
+2022-09-04 13:23:25.293  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662269005293, current=UP, previous=STARTING]
+2022-09-04 13:23:25.293  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:23:25.298  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2022-09-04 13:23:25.300  INFO 9244 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8001
+2022-09-04 13:23:25.312  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:23:26.842  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Started PaymentMain8001 in 11.192 seconds (JVM running for 1020.702)
+2022-09-04 13:23:26.845  INFO 9244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-09-04 13:26:55.473  INFO 9244 --- [http-nio-8001-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 13:26:55.474  INFO 9244 --- [http-nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-04 13:26:55.477  INFO 9244 --- [http-nio-8001-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-09-04 13:28:25.280  INFO 9244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:31:40.573  INFO 9244 --- [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLOUD-PAYMENT-SERVICE with eureka with status DOWN
+2022-09-04 13:31:40.573  INFO 9244 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662269500573, current=DOWN, previous=UP]
+2022-09-04 13:31:40.574  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:31:40.585  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:31:41.958  INFO 9244 --- [Thread-13] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2022-09-04 13:31:41.959  INFO 9244 --- [Thread-13] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2022-09-04 13:31:41.961  INFO 9244 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-09-04 13:31:44.973  INFO 9244 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-09-04 13:31:44.988  INFO 9244 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - deregister  status: 200
+2022-09-04 13:31:44.997  INFO 9244 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-09-04 13:31:48.192  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Starting PaymentMain8001 using Java 11.0.14.1 on DESKTOP-FOS9FAS with PID 9244 (D:\programs\codes\java\springcloud_study_parent\cloud-provider-payment8001\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+2022-09-04 13:31:48.193  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : No active profile set, falling back to 1 default profile: "default"
+2022-09-04 13:31:49.257  INFO 9244 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0477dcc9-0279-39e4-8d10-f62755d4d711
+2022-09-04 13:31:49.337  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2022-09-04 13:31:49.338  INFO 9244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-04 13:31:49.338  INFO 9244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-04 13:31:49.462  INFO 9244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-04 13:31:49.462  INFO 9244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1262 ms
+2022-09-04 13:31:49.487  INFO 9244 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-09-04 13:31:49.507  INFO 9244 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+2022-09-04 13:31:51.214  WARN 9244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-09-04 13:31:52.581  INFO 9244 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-04 13:31:52.604  WARN 9244 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-04 13:31:52.610  INFO 9244 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-04 13:31:52.642  INFO 9244 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-04 13:31:52.644  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-09-04 13:31:52.645  INFO 9244 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:31:52.646  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-09-04 13:31:52.646  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-09-04 13:31:52.646  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-09-04 13:31:52.646  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-09-04 13:31:52.646  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-09-04 13:31:52.646  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-09-04 13:31:52.647  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-09-04 13:31:52.670  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-09-04 13:31:52.671  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-09-04 13:31:52.673  INFO 9244 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-04 13:31:52.674  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1662269512674 with initial instances count: 2
+2022-09-04 13:31:52.676  INFO 9244 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-PAYMENT-SERVICE with eureka with status UP
+2022-09-04 13:31:52.676  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662269512676, current=UP, previous=STARTING]
+2022-09-04 13:31:52.677  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:31:52.683  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2022-09-04 13:31:52.684  INFO 9244 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8001
+2022-09-04 13:31:52.701  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:31:54.070  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Started PaymentMain8001 in 8.925 seconds (JVM running for 1527.93)
+2022-09-04 13:31:54.071  INFO 9244 --- [Thread-19] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLOUD-PAYMENT-SERVICE with eureka with status DOWN
+2022-09-04 13:31:54.072  INFO 9244 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662269514072, current=DOWN, previous=UP]
+2022-09-04 13:31:54.072  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:31:54.076  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:31:54.077  INFO 9244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-09-04 13:31:55.007  INFO 9244 --- [Thread-19] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closing ...
+2022-09-04 13:31:55.008  INFO 9244 --- [Thread-19] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+2022-09-04 13:31:55.009  INFO 9244 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-09-04 13:31:58.016  INFO 9244 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-09-04 13:31:58.031  INFO 9244 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - deregister  status: 200
+2022-09-04 13:31:58.047  INFO 9244 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-09-04 13:32:00.694  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Starting PaymentMain8001 using Java 11.0.14.1 on DESKTOP-FOS9FAS with PID 9244 (D:\programs\codes\java\springcloud_study_parent\cloud-provider-payment8001\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+2022-09-04 13:32:00.694  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : No active profile set, falling back to 1 default profile: "default"
+2022-09-04 13:32:01.690  INFO 9244 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0477dcc9-0279-39e4-8d10-f62755d4d711
+2022-09-04 13:32:01.765  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2022-09-04 13:32:01.766  INFO 9244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-04 13:32:01.766  INFO 9244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-09-04 13:32:01.886  INFO 9244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-04 13:32:01.887  INFO 9244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1187 ms
+2022-09-04 13:32:01.909  INFO 9244 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-09-04 13:32:01.929  INFO 9244 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+2022-09-04 13:32:03.611  WARN 9244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-09-04 13:32:04.987  INFO 9244 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-09-04 13:32:05.011  WARN 9244 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-09-04 13:32:05.016  INFO 9244 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-04 13:32:05.048  INFO 9244 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-09-04 13:32:05.051  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-09-04 13:32:05.051  INFO 9244 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:32:05.052  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-09-04 13:32:05.052  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-09-04 13:32:05.052  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-09-04 13:32:05.052  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-09-04 13:32:05.052  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-09-04 13:32:05.052  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-09-04 13:32:05.052  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-09-04 13:32:05.072  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-09-04 13:32:05.073  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-09-04 13:32:05.074  INFO 9244 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-09-04 13:32:05.075  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1662269525075 with initial instances count: 1
+2022-09-04 13:32:05.076  INFO 9244 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLOUD-PAYMENT-SERVICE with eureka with status UP
+2022-09-04 13:32:05.076  INFO 9244 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662269525076, current=UP, previous=STARTING]
+2022-09-04 13:32:05.077  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:32:05.082  INFO 9244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path ''
+2022-09-04 13:32:05.083  INFO 9244 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8001
+2022-09-04 13:32:05.100  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
+2022-09-04 13:32:06.458  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Started PaymentMain8001 in 8.288 seconds (JVM running for 1540.318)
+2022-09-04 13:32:06.461  INFO 9244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

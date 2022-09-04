@@ -80,3 +80,5 @@ maven:
 - order80
 
 分别启动项目
+
+> 注意: 在 `cloud-consumer-order80` 在项目中的 `restTemplate.getForObject(INVOKE_URL + "/payment/get/{id}", CommonResult.class, id);`, 注意这里是 `CommonResult.class` 而不是 `Payment.class`
