@@ -20,6 +20,9 @@ eureka:
     # EurekaServer的地址
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7001.com:7002/eureka
+  instance:
+    instance-id: payment8002
+    prefer-ip-address: true
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
