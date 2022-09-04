@@ -46,4 +46,27 @@ spring:
 
 `service-name: ${spring.application.name}`这个名字最终会在 consul 控制台上新建一个`Service`
 
+# consul消费端
+
+依赖情况一样, 直接复制就行
+
+application.yml
+```yaml
+###consul服务端口号
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumer-order
+  ####consul注册中心地址
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        #hostname: 127.0.0.1
+        service-name: ${spring.application.name}
+```
+
 
