@@ -400,3 +400,134 @@
 2022-09-04 13:32:05.100  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration status: 204
 2022-09-04 13:32:06.458  INFO 9244 --- [restartedMain] com.zhazha.springcloud.PaymentMain8001   : Started PaymentMain8001 in 8.288 seconds (JVM running for 1540.318)
 2022-09-04 13:32:06.461  INFO 9244 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-09-04 13:33:53.378  INFO 9244 --- [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-04 13:33:53.379  INFO 9244 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-04 13:33:53.381  INFO 9244 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-09-04 13:37:05.056  INFO 9244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:37:57.875 DEBUG 9244 --- [http-nio-8001-exec-8] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:37:57.875 DEBUG 9244 --- [http-nio-8001-exec-8] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:37:57.877 DEBUG 9244 --- [http-nio-8001-exec-8] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:37:57.878  INFO 9244 --- [http-nio-8001-exec-8] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:42:05.068  INFO 9244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:42:20.651 DEBUG 9244 --- [http-nio-8001-exec-10] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:42:20.651 DEBUG 9244 --- [http-nio-8001-exec-10] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:42:20.653 DEBUG 9244 --- [http-nio-8001-exec-10] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:42:20.654  INFO 9244 --- [http-nio-8001-exec-10] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:42:23.706 DEBUG 9244 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:42:23.708 DEBUG 9244 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 1(Long)
+2022-09-04 13:42:23.710 DEBUG 9244 --- [http-nio-8001-exec-1] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 0
+2022-09-04 13:42:23.711  INFO 9244 --- [http-nio-8001-exec-1] c.z.s.controller.PaymentController       : ******插入结果：null
+2022-09-04 13:43:15.696 DEBUG 9244 --- [http-nio-8001-exec-3] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:43:15.697 DEBUG 9244 --- [http-nio-8001-exec-3] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 3(Long)
+2022-09-04 13:43:15.698 DEBUG 9244 --- [http-nio-8001-exec-3] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 0
+2022-09-04 13:43:15.699  INFO 9244 --- [http-nio-8001-exec-3] c.z.s.controller.PaymentController       : ******插入结果：null
+2022-09-04 13:43:18.891 DEBUG 9244 --- [http-nio-8001-exec-2] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:43:18.892 DEBUG 9244 --- [http-nio-8001-exec-2] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:43:18.894 DEBUG 9244 --- [http-nio-8001-exec-2] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:43:18.895  INFO 9244 --- [http-nio-8001-exec-2] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:43:39.355 DEBUG 9244 --- [http-nio-8001-exec-4] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:43:39.356 DEBUG 9244 --- [http-nio-8001-exec-4] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:43:39.359 DEBUG 9244 --- [http-nio-8001-exec-4] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:43:39.360  INFO 9244 --- [http-nio-8001-exec-4] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:47:05.081  INFO 9244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:52:05.091  INFO 9244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:56:20.047 DEBUG 9244 --- [http-nio-8001-exec-6] c.z.s.dao.PaymentDao.getPaymentById      : ==>  Preparing: select * from payment p where p.id = ?
+2022-09-04 13:56:20.048 DEBUG 9244 --- [http-nio-8001-exec-6] c.z.s.dao.PaymentDao.getPaymentById      : ==> Parameters: 2(Long)
+2022-09-04 13:56:20.051 DEBUG 9244 --- [http-nio-8001-exec-6] c.z.s.dao.PaymentDao.getPaymentById      : <==      Total: 1
+2022-09-04 13:56:20.052  INFO 9244 --- [http-nio-8001-exec-6] c.z.s.controller.PaymentController       : ******插入结果：Payment(id=2, serial=778899)
+2022-09-04 13:57:05.106  INFO 9244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-09-04 13:58:27.065  INFO 9244 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLOUD-PAYMENT-SERVICE with eureka with status DOWN
+2022-09-04 13:58:27.065  INFO 9244 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1662271107065, current=DOWN, previous=UP]
+2022-09-04 13:58:27.066  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001: registering service...
+2022-09-04 13:58:27.127  INFO 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:7001/eureka/}, exception=I/O error on POST request for "http://localhost:7001/eureka/apps/CLOUD-PAYMENT-SERVICE": Software caused connection abort: recv failed; nested exception is java.net.SocketException: Software caused connection abort: recv failed stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:7001/eureka/apps/CLOUD-PAYMENT-SERVICE": Software caused connection abort: recv failed; nested exception is java.net.SocketException: Software caused connection abort: recv failed
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+
+2022-09-04 13:58:27.127  WARN 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:7001/eureka/apps/CLOUD-PAYMENT-SERVICE": Software caused connection abort: recv failed; nested exception is java.net.SocketException: Software caused connection abort: recv failed
+2022-09-04 13:58:27.147  WARN 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLOUD-PAYMENT-SERVICE/localhost:cloud-payment-service:8001 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-09-04 13:58:27.156  WARN 9244 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
