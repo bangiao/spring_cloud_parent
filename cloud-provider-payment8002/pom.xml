@@ -9,12 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-order80</artifactId>
+    <artifactId>cloud-provider-payment8002</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
     <dependencies>
         <!-- SpringBoot整合zookeeper客户端,这里不再使用Eureka进行服务注册，所以这里导入的是Zookeeper的相关依赖 -->
         <dependency>
@@ -34,11 +35,6 @@
             <artifactId>zookeeper</artifactId>
             <version>3.8.0</version>
         </dependency>
-<!--       zookeeper-discovery< 已经有了, 不需要加-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>-->
-<!--        </dependency>-->
         <!-- SpringBoot整合Web组件 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
