@@ -19,3 +19,15 @@ management:
       exposure:
         ## yml文件中存在特殊字符，必须用单引号包含，否则启动报错
         include: '*'
+feign:
+  client:
+    config:
+      ## default 设置的全局超时时间，指定服务名称可以设置单个服务的超时时间
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+      cloud-consumer-order:
+        connectTimeout: 3000
+        readTimeout: 3000
+        loggerLevel: basic

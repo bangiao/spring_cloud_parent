@@ -1,5 +1,7 @@
 package com.zhazha.springcloud.controller;
 
+import com.zhazha.springcloud.dto.CommonResult;
+import com.zhazha.springcloud.entities.Payment;
 import com.zhazha.springcloud.service.PaymentClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,4 +26,10 @@ public class OrderConsulController {
 //        return result;
         return paymentClient.paymentInfo();
     }
+    
+    @GetMapping("/consumer/payment/create")
+    public CommonResult create(Payment payment) {
+    	return paymentClient.create(payment);
+    }
+    
 }

@@ -16,7 +16,12 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
-<!--        添加 openFeign-->
+        <dependency>
+            <groupId>com.zhazha.springcloud</groupId>
+            <artifactId>cloud-api-commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--        添加 openFeign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
