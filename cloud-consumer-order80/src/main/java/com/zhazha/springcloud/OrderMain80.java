@@ -9,10 +9,10 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class OrderConsulMain80 {
+public class OrderMain80 {
 	
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(OrderConsulMain80.class, args);
+		SpringApplication.run(OrderMain80.class, args);
 	}
 	
 	@Bean
