@@ -4,6 +4,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.zhazha.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,7 +37,10 @@ public class PaymentController {
 
     private final static AtomicInteger counter = new AtomicInteger(0);
 
+    @Value("${server.port}")
+    private String port;
+
     public String fallbackPaymentInfoTimeOut(Integer id) {
-        return "<h1>访问'/payment/hystrix/timeout'失败: " + counter.getAndIncrement() + "</h1>";
+        return "<h1>port: " + port + "访问'/payment/hystrix/timeout'失败: " + counter.getAndIncrement() + "</h1>";
     }
 }
