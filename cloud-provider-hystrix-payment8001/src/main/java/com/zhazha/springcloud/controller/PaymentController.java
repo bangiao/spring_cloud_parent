@@ -1,6 +1,7 @@
 package com.zhazha.springcloud.controller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.zhazha.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,31 +9,34 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 @Slf4j
 public class PaymentController {
-	@Resource
-	private PaymentService paymentService;
-	
-	@GetMapping("/payment/hystrix/ok/{id}")
-	public String paymentInfoOk(@PathVariable("id") Integer id) {
-		String result = paymentService.paymentInfoOk(id);
-		log.info("****result: " + result);
-		return result;
-	}
-	
-	@HystrixCommand(fallbackMethod = "fallbackPaymentInfoTimeOut")
-	@GetMapping("/payment/hystrix/timeout/{id}")
-	public String paymentInfoTimeOut(@PathVariable("id") Integer id) throws InterruptedException {
-		String result = paymentService.paymentInfoTimeOut(id);
-		log.info("****result: " + result);
-		return result;
-	}
-	
-	public String fallbackPaymentInfoTimeOut(Integer id) {
-		String result = "fallback";
-		log.info("****result: " + result);
-		return result;
-	}
+    @Resource
+    private PaymentService paymentService;
+
+    @GetMapping("/payment/hystrix/ok/{id}")
+    public String paymentInfoOk(@PathVariable("id") Integer id) {
+        String result = paymentService.paymentInfoOk(id);
+        log.info("****result: " + result);
+        return result;
+    }
+
+    @HystrixCommand(fallbackMethod = "fallbackPaymentInfoTimeOut", commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "6000")
+    })
+    @GetMapping("/payment/hystrix/timeout/{id}")
+    public String paymentInfoTimeOut(@PathVariable("id") Integer id) throws InterruptedException {
+        String result = paymentService.paymentInfoTimeOut(id);
+        log.info("****result: " + result);
+        return result;
+    }
+
+    private final static AtomicInteger counter = new AtomicInteger(0);
+
+    public String fallbackPaymentInfoTimeOut(Integer id) {
+        return "<h1>访问'/payment/hystrix/timeout'失败: " + counter.getAndIncrement() + "</h1>";
+    }
 }
