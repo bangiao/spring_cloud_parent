@@ -14,12 +14,12 @@ public class PaymentServiceImpl implements PaymentService {
 	
 	@Override
 	public String paymentInfoTimeOut(Integer id) {
+		long seconds = 5;
 		try {
-			TimeUnit.SECONDS.sleep(3);
+			TimeUnit.SECONDS.sleep(seconds);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		return "线程池:" + Thread.currentThread().getName() + "paymentInfo_TimeOut,id: " + id + "\t" + "O(∩_∩)O，耗费3秒";
-		
+		return "线程池:" + Thread.currentThread().getName() + "paymentInfo_TimeOut,id: " + id + "\t" + "O(∩_∩)O，耗费" + seconds + "秒";
 	}
 }
