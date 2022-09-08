@@ -13,22 +13,23 @@ spring:
       discovery:
         #hostname: 127.0.0.1
         service-name: ${spring.application.name}
-feign:
-  hystrix:
-    enabled: true
-  client:
-    config:
-      ## default 设置的全局超时时间，指定服务名称可以设置单个服务的超时时间
-      default:
-        connectTimeout: 7000
-        readTimeout: 7000
-        loggerLevel: basic
-##设置feign 客户端超时时间（openFeign默认支持ribbon）
+#feign:
+#  client:
+#    config:
+#      ## default 设置的全局超时时间，指定服务名称可以设置单个服务的超时时间
+#      default:
+#        connectTimeout: 5500
+#        readTimeout: 5500
+#        loggerLevel: basic
+#  hystrix:
+#    enabled: true
+###设置feign 客户端超时时间（openFeign默认支持ribbon）
 #ribbon:
 #  #指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的时间
 #  ReadTimeout: 7000
 #  #指的是建立连接后从服务器读取到可用资源所用的时间
 #  ConnectTimeout: 7000
+## hystrix 内部的超时时间, 两个超时时间相同才会有准确的超时时间
 #hystrix:
 #  command:
 #    default:

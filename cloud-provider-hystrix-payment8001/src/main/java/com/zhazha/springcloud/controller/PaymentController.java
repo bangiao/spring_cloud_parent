@@ -1,5 +1,6 @@
 package com.zhazha.springcloud.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.zhazha.springcloud.service.PaymentService;
@@ -14,6 +15,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 @Slf4j
+@DefaultProperties(defaultFallback = "globalFallback", commandProperties = {
+        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+})
 public class PaymentController {
     @Resource
     private PaymentService paymentService;
@@ -26,12 +30,28 @@ public class PaymentController {
     }
 
     @HystrixCommand(fallbackMethod = "fallbackPaymentInfoTimeOut", commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "6000")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5500")
     })
     @GetMapping("/payment/hystrix/timeout/{id}")
     public String paymentInfoTimeOut(@PathVariable("id") Integer id) throws InterruptedException {
         String result = paymentService.paymentInfoTimeOut(id);
         log.info("****result: " + result);
+        return result;
+    }
+
+    @HystrixCommand
+    @GetMapping("/payment/hystrix/timeout01/{id}")
+    public String paymentInfoTimeOut01(@PathVariable("id") Integer id) throws InterruptedException {
+        String result = paymentService.paymentInfoTimeOut(id);
+        log.info("timeout01: " + result);
+        return result;
+    }
+
+    @HystrixCommand
+    @GetMapping("/payment/hystrix/timeout02/{id}")
+    public String paymentInfoTimeOut02(@PathVariable("id") Integer id) throws InterruptedException {
+        String result = paymentService.paymentInfoTimeOut(id);
+        log.info("timeout01: " + result);
         return result;
     }
 
@@ -43,4 +63,9 @@ public class PaymentController {
     public String fallbackPaymentInfoTimeOut(Integer id) {
         return "<h1>port: " + port + "访问'/payment/hystrix/timeout'失败: " + counter.getAndIncrement() + "</h1>";
     }
+
+    public String globalFallback() {
+        return "<h1>Global port: " + port + " counter: " + counter.getAndIncrement() + "系统繁忙, 请稍后再尝试</h1>";
+    }
+
 }

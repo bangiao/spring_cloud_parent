@@ -14,5 +14,4 @@ public class PaymentHystrixMain8001 {
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(PaymentHystrixMain8001.class, args);
 	}
-	
 }

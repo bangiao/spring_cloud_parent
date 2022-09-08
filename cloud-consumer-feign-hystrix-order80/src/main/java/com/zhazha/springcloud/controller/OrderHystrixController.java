@@ -24,4 +24,14 @@ public class OrderHystrixController {
     public String paymentInfoTimeOut(@PathVariable("id") Integer id) throws InterruptedException {
         return paymentClient.paymentInfoTimeOut(id);
     }
+
+    @GetMapping("/consumer/payment/hystrix/timeout01/{id}")
+    public String paymentInfoTimeOut01(@PathVariable("id") Integer id) throws InterruptedException {
+        return paymentClient.paymentInfoTimeOut(id);
+    }
+
+    @GetMapping("/consumer/payment/hystrix/timeout02/{id}")
+    public String paymentInfoTimeOut02(@PathVariable("id") Integer id) throws InterruptedException {
+        return paymentClient.paymentInfoTimeOut(id);
+    }
 }
