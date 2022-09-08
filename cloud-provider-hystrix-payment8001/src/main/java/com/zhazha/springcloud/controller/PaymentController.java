@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @RestController
 @Slf4j
 @DefaultProperties(defaultFallback = "globalFallback", commandProperties = {
-        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+        @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "4000")
 })
 public class PaymentController {
     @Resource
@@ -30,7 +30,7 @@ public class PaymentController {
     }
 
     @HystrixCommand(fallbackMethod = "fallbackPaymentInfoTimeOut", commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5500")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "6000")
     })
     @GetMapping("/payment/hystrix/timeout/{id}")
     public String paymentInfoTimeOut(@PathVariable("id") Integer id) throws InterruptedException {
