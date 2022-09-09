@@ -19,6 +19,12 @@ import java.util.concurrent.atomic.AtomicInteger;
         @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "4000")
 })
 public class PaymentController {
+
+    private final static AtomicInteger counter = new AtomicInteger(0);
+
+    @Value("${server.port}")
+    private String port;
+
     @Resource
     private PaymentService paymentService;
 
@@ -54,12 +60,6 @@ public class PaymentController {
         log.info("timeout01: " + result);
         return result;
     }
-
-    private final static AtomicInteger counter = new AtomicInteger(0);
-
-    @Value("${server.port}")
-    private String port;
-
     public String fallbackPaymentInfoTimeOut(Integer id) {
         return "<h1>port: " + port + "访问'/payment/hystrix/timeout'失败: " + counter.getAndIncrement() + "</h1>";
     }
