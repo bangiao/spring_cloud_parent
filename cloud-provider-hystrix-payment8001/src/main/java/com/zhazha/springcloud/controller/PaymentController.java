@@ -68,4 +68,13 @@ public class PaymentController {
         return "<h1>Global port: " + port + " counter: " + counter.getAndIncrement() + "系统繁忙, 请稍后再尝试</h1>";
     }
 
+    // ====服务熔断=====
+    @GetMapping("/payment/circuit/{id}")
+    public String paymentCircuitBreaker(@PathVariable("id") Integer id) {
+        String result = paymentService.circuitBreaker(id);
+        log.info("****result: " + result);
+        return result;
+    }
+
+
 }

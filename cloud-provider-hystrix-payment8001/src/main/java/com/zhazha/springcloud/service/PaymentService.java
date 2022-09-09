@@ -1,5 +1,7 @@
 package com.zhazha.springcloud.service;
 
+import org.springframework.web.bind.annotation.PathVariable;
+
 public interface PaymentService {
 	/**
 	 * 正常访问一切 OK
@@ -16,4 +18,6 @@ public interface PaymentService {
 	 * @return
 	 */
 	String paymentInfoTimeOut(Integer id);
+
+	String circuitBreaker(@PathVariable("id") Integer id);
 }
