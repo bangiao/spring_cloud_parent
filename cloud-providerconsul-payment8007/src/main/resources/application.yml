@@ -1,9 +1,9 @@
 server:
-  port: 80
+  port: 8007
 
 spring:
   application:
-    name: cloud-consumer-order
+    name: consul-provider-payment
   cloud:
     consul:
       host: localhost
