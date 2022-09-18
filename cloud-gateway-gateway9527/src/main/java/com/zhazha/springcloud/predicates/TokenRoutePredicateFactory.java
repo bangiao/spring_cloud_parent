@@ -3,13 +3,12 @@ package com.zhazha.springcloud.predicates;
 import com.zhazha.springcloud.predicates.config.MyConfig;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.cloud.gateway.handler.predicate.AbstractRoutePredicateFactory;
-import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 
 import java.util.List;
 import java.util.function.Predicate;
 
-@Component
+//@Component
 public class TokenRoutePredicateFactory extends AbstractRoutePredicateFactory<MyConfig> {
 
     public TokenRoutePredicateFactory() {
