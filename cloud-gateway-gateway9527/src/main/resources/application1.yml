@@ -1,0 +1,36 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+    gateway:
+      routes:
+        - id: provider_payment_consul_routh
+          uri: lb://consul-provider-payment
+          predicates:
+            - Path=/payment/consul/**
+        - id: provider_payment_xxxx_routh
+          uri: lb://consul-provider-payment
+          predicates:
+            - Path=/payment/xxxx/**
+        - id: provider_payment_zhazha_routh
+          uri: lb://consul-provider-payment
+          predicates:
+            - Path=/payment/zhazha/**
+      enabled: true
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+    sentinel:
+      filter:
+        enabled: false
+      transport:
+        dashboard: localhost:8080

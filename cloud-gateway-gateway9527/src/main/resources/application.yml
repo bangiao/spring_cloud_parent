@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: cloud-gateway
+    name: api-gateway
   cloud:
     consul:
       host: localhost
@@ -15,7 +15,9 @@ spring:
         - id: provider_payment_consul_routh
           uri: lb://consul-provider-payment
           predicates:
-            - Path=/payment/consul/**
+            - Path=/provider/order/**
+          filters:
+            - MapRequestHeader=Blue, X-Request-Red
       enabled: true
       discovery:
         locator:
