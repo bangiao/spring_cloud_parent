@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletResponse;
+
 @RestController
 @Slf4j
 @RequestMapping("provider")
@@ -16,6 +18,12 @@ public class MapRequestHeaderController {
 		System.err.println("blue: " + blue);
 		System.err.println("X-Request-Red: " + xRequestRed);
 		return "order —— blue：" + blue + "\t\t X-Request-Red: " + xRequestRed;
+	}
+	
+	@GetMapping("setResponseHeader")
+	public String setResponseHeader(HttpServletResponse response) {
+		response.addHeader("X-Response-Red", "1234");
+		return "X-Response-Red";
 	}
 	
 }

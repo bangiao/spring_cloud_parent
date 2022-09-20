@@ -15,9 +15,10 @@ spring:
         - id: provider_payment_consul_routh
           uri: lb://consul-provider-payment
           predicates:
-            - Path=/provider/order/**
+            - Path=/provider/**
           filters:
-            - MapRequestHeader=Blue, X-Request-Red
+            - SetResponseHeader=X-Response-Red,Blue
+#            - MapRequestHeader=Blue, X-Request-Red
       enabled: true
       discovery:
         locator:
