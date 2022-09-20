@@ -17,7 +17,10 @@ spring:
           predicates:
             - Path=/provider/**
           filters:
-            - SetResponseHeader=X-Response-Red,Blue
+            - name: WhiteList
+              args:
+                value: zhazha,xixi
+#            - SetResponseHeader=X-Response-Red,Blue
 #            - MapRequestHeader=Blue, X-Request-Red
       enabled: true
       discovery:

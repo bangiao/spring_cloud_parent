@@ -21,7 +21,8 @@ public class MapRequestHeaderController {
 	}
 	
 	@GetMapping("setResponseHeader")
-	public String setResponseHeader(HttpServletResponse response) {
+	public String setResponseHeader(HttpServletResponse response, String username) {
+		System.err.println("username: " + username);
 		response.addHeader("X-Response-Red", "1234");
 		return "X-Response-Red";
 	}
