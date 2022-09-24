@@ -27,9 +27,9 @@ public class MapRequestHeaderController {
 		return "X-Response-Red";
 	}
 	
-//	@GetMapping("rewritePath")
-//	public String reWritePath() {
-//		return "rewritePath";
-//	}
+	@GetMapping("rewritePath")
+	public String reWritePath() {
+		return "rewritePath";
+	}
 	
 }
