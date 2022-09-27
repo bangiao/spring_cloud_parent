@@ -15,9 +15,17 @@ public class ConfigController {
     @Value("${password:}")
     private String password;
 
+    @Value("${other01:}")
+    private String other01;
+
+    @Value("${other02:}")
+    private String other02;
+
     @GetMapping("get")
     public String get() {
-    	return String.format("username = %s, password = %s\n",  username, password);
+    	return String.format("username = %s, password = %s, other01 = %s, other02 = %s\n",  username, password, other01, other02);
     }
+
+
 
 }

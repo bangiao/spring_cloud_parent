@@ -8,3 +8,13 @@ spring:
         prefix: cloud-nacos-config
         group: nacos-config
         file-extension: properties
+        extension-configs:
+          - data-id: cloud-other-01.yml
+            group: DEFAULT_GROUP
+            refresh: true
+          - data-id: cloud-other-02.properties
+            group: nacos-config
+            refresh: true
+          - data-id: cloud-other-03.properties
+            group: DEFAULT_GROUP
+            refresh: true
