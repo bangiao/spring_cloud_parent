@@ -10,6 +10,8 @@
     <modules>
         <module>cloud-api-commons</module>
         <module>cloud-nacos-config</module>
+        <module>nacos-service-provider</module>
+        <module>nacos-service-consumer</module>
     </modules>
 
     <properties>
