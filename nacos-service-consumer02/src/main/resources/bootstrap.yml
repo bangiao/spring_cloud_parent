@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: nacos-service-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: de42d6f6-2705-44f5-a947-3cb6ed8161ba
+        group: nacos-service

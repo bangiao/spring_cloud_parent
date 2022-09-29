@@ -12,6 +12,8 @@
         <module>cloud-nacos-config</module>
         <module>nacos-service-provider</module>
         <module>nacos-service-consumer</module>
+        <module>nacos-service-consumer02</module>
+        <module>nacos-service-provider02</module>
     </modules>
 
     <properties>
