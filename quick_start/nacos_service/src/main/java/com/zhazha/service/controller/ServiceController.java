@@ -35,14 +35,20 @@ public class ServiceController {
         }
     }
 
-    @GetMapping("deregister")
-    public void  deRegister(String serverName, String ip, int port) {
-        try {
-            namingService.deregisterInstance(serverName, ip, port);
-        } catch (NacosException e) {
-            e.printStackTrace();
-        }
-    }
+    /**
+     * 这个是有问题的， 服务内部还有实例，你需要先删除内部的实例才能删除删除外部的服务
+     * 有一个方法是关闭该服务，然后再 点击【隐藏空服务】，可以看到关闭的服务，现在就可以删除了
+     *
+     * @param serverName
+     */
+//    @GetMapping("deregister")
+//    public void  deRegister(String serverName, String ip, int port) {
+//        try {
+//            namingService.deregisterInstance(serverName, ip, port);
+//        } catch (NacosException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     @GetMapping("subscribe")
     public void subscribe(String serverName) {
