@@ -19,7 +19,7 @@ public class ConfigApplication {
 		String dataId = "quick_start.properties";
 		Properties properties = new Properties();
 		properties.setProperty(PropertyKeyConst.SERVER_ADDR, serverAddr);
-//		properties.setProperty(PropertyKeyConst.NAMESPACE, "972fd314-7e76-4979-aab3-241c7b550bad");
+		properties.setProperty(PropertyKeyConst.NAMESPACE, "972fd314-7e76-4979-aab3-241c7b550bad");
 		ConfigService configService = NacosFactory.createConfigService(properties);
 		configService.addListener(dataId, groupId, new Listener() {
 			@Override
