@@ -7,3 +7,4 @@ spring:
         server-addr: 127.0.0.1:8840
         namespace: a4ac0e09-57cb-45b6-887d-3d8b884a3bca
         group: nacos-service
+        weight: 0.3
