@@ -4,6 +4,6 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
-        namespace: de42d6f6-2705-44f5-a947-3cb6ed8161ba
+        server-addr: 127.0.0.1:8840
+        namespace: a4ac0e09-57cb-45b6-887d-3d8b884a3bca
         group: nacos-service
