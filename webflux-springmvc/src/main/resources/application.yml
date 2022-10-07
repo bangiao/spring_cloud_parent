@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: webflux-springmvc
+  r2dbc:
+    username: root
+    password: 123456
+    url: r2dbc:mysql://127.0.0.1:3306/test?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
