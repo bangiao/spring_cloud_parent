@@ -17,7 +17,10 @@ public class GatewayConfig {
 //		};
 //		GatewayCallbackManager.setBlockHandler(blockHandler);
 //	}
-	
+
+    /**
+     * 自定义 route
+     */
 //	@Bean
 //	public RouteLocator routes(RouteLocatorBuilder builder, WhiteListGatewayFilterFactory factory) {
 //		return builder

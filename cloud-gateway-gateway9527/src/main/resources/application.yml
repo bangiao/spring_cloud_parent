@@ -15,19 +15,25 @@ spring:
         - id: provider_payment_consul_routh
           uri: lb://consul-provider-payment
           predicates:
-            - Path=/provider/**
-          filters:
-            - RewritePath=/provider/(?<segment>.*), /$\{segment} #路径重写的过滤器，在yml中$写为 $\
-      #            - name: WhiteList
-      #              args:
-      #                value: zhazha,xixi
-      #            - SetResponseHeader=X-Response-Red,Blue
-      #            - MapRequestHeader=Blue, X-Request-Red
+            - Path=/payment/consul/**
+        - id: provider_payment_xxxx_routh
+          uri: lb://consul-provider-payment
+          predicates:
+            - Path=/payment/xxxx/**
+        - id: provider_payment_zhazha_routh
+          uri: lb://consul-provider-payment
+          predicates:
+            - Path=/payment/zhazha/**
       enabled: true
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
+    sentinel:
+      filter:
+        enabled: false # sentinel只能够控制route或者API组合，不能针对url。如果你在sentinel的网关部分发现有操控url的部分，请加上此配置
+      transport:
+        dashboard: localhost:8080
 management:
   endpoints:
     web:

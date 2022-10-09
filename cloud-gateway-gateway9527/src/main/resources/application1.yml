@@ -16,6 +16,11 @@ spring:
           uri: lb://consul-provider-payment
           predicates:
             - Path=/payment/consul/**
+          filter:
+#            - WhiteList=zhazha,xixi # 自定义过滤器
+            - name: WhiteList
+              args:
+                value: zhazha,xixi
         - id: provider_payment_xxxx_routh
           uri: lb://consul-provider-payment
           predicates:

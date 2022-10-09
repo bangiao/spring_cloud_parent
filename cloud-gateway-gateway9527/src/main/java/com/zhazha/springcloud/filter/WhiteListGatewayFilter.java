@@ -9,6 +9,9 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 
+/**
+ * 白名单 gateway过滤器
+ */
 public class WhiteListGatewayFilter implements GatewayFilter, Ordered {
 	
 	private List<String> whiteList;

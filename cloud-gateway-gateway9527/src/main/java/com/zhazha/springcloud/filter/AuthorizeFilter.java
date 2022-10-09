@@ -8,6 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
+/**
+ * 案例：全局过滤器判断请求中是否存在token
+ */
 //@Component
 public class AuthorizeFilter implements GlobalFilter, Ordered {
 	@Override
