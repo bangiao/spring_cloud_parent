@@ -29,7 +29,7 @@ public class MapRequestHeaderController {
 	
 	@GetMapping("rewritePath")
 	public String reWritePath() {
-		return "rewritePath";
+		return "provider rewritePath";
 	}
 	
 }
