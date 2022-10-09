@@ -24,6 +24,12 @@ spring:
           uri: lb://consul-provider-payment
           predicates:
             - Path=/payment/zhazha/**
+        - id: provider_provider_order
+          uri: lb://consul-provider-payment
+          predicates:
+            - Path=/provider/**
+          filters:
+            - AddRequestHeader=X-Request-Red, dddd
       enabled: true
       discovery:
         locator:
