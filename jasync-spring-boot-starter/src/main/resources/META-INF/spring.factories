@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.zhazha.jasync.config.JasyncAutoConfiguration
