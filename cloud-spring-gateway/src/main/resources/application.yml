@@ -1,6 +1,8 @@
 server:
   port: 8088
 spring:
+  application:
+    name: cloud-nacos-config
   cloud:
     nacos:
       server-addr: 127.0.0.1:8840
@@ -8,7 +10,6 @@ spring:
         namespace: a4ac0e09-57cb-45b6-887d-3d8b884a3bca
         group: nacos-config
         file-extension: properties
-        prefix: cloud-nacos-config
     gateway:
       discovery:
         locator:
@@ -18,14 +19,12 @@ spring:
         - id: provider_payment_consul_routh
           uri: lb://nacos-provider-payment
           predicates:
-            - name: Path
-              args: /payment/nacos/**
-            - name: Method
-              args: GET
+            - Path=/payment/nacos/**
+            - Method=GET
   config:
     import:
-      - optional:nacos:${spring.cloud.nacos.config.prefix}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
-#      - optional:nacos:cloud-nacos-config-test.properties?group=nacos-config
+      - optional:nacos:${spring.application.name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+      #      - optional:nacos:cloud-nacos-config-test.properties?group=nacos-config
       - optional:nacos:cloud-other-01.yml?group=DEFAULT_GROUP
       - optional:nacos:cloud-other-02.properties&refreshEnabled=false # 不开启动态刷新
       - optional:nacos:cloud-other-03.properties?group=DEFAULT_GROUP
