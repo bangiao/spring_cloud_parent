@@ -9,6 +9,19 @@ spring:
         group: nacos-config
         file-extension: properties
         prefix: cloud-nacos-config
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true # 小驼峰 service id
+          enabled: true # 让 gateway 从 nacos 中获取服务信息
+      routes:
+        - id: provider_payment_consul_routh
+          uri: lb://nacos-provider-payment
+          predicates:
+            - name: Path
+              args: /payment/nacos/**
+            - name: Method
+              args: GET
   config:
     import:
       - optional:nacos:${spring.cloud.nacos.config.prefix}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
