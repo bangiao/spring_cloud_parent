@@ -21,6 +21,27 @@ spring:
           predicates:
             - Path=/payment/nacos/**
             - Method=GET
+          filters:
+            - name:
+                RequestRateLimiter # RequestRateLimiterGatewayFilterFactory
+              args:
+                # 令牌桶每秒填充平均速率
+                redis-rate-limiter.replenishRate: 1
+                # 令牌桶的上限
+                redis-rate-limiter.burstCapacity: 10
+                # 使用 SpEL 表达式从 Spring 容器中获取 Bean 对象
+                # pathKeyResolver 是根据地址来限流
+                key-resolver: "#{@remoteAddrKeyResolver}" # 详情见 RateLimiterConfig
+            - name:
+                RequestRateLimiter # RequestRateLimiterGatewayFilterFactory
+              args:
+                # 令牌桶每秒填充平均速率
+                redis-rate-limiter.replenishRate: 1
+                # 令牌桶的上限
+                redis-rate-limiter.burstCapacity: 10
+                # 使用 SpEL 表达式从 Spring 容器中获取 Bean 对象
+                # pathKeyResolver 是根据地址来限流
+                key-resolver: "#{@pathKeyResolver}" # 详情见 RateLimiterConfig
   config:
     import:
       - optional:nacos:${spring.application.name}-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
