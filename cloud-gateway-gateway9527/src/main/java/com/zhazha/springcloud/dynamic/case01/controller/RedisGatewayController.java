@@ -3,6 +3,7 @@ package com.zhazha.springcloud.dynamic.case01.controller;
 import com.zhazha.springcloud.dynamic.case01.service.RedisGatewayService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.route.RouteDefinition;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -39,9 +40,8 @@ public class RedisGatewayController {
 	}
 	
 	@DeleteMapping("delete")
-	public Mono<Void> delete(String routeId) {
-		redisGatewayService.delete(routeId);
-		return Mono.empty();
+	public Mono<ResponseEntity<Object>> delete(String routeId) {
+		return redisGatewayService.delete(routeId);
 	}
 	
 }
