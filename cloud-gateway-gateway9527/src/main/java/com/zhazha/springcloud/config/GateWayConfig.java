@@ -1,5 +1,6 @@
 package com.zhazha.springcloud.config;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
@@ -26,6 +27,11 @@ public class GateWayConfig {
                 r -> r.path("/guoji")
                         .uri("https://news.baidu.com")).build();
         return routes.build();
+    }
+    
+    @Bean
+    public ObjectMapper objectMapper() {
+        return new ObjectMapper();
     }
 
 }
