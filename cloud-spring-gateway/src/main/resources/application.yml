@@ -51,3 +51,6 @@ spring:
       - optional:nacos:cloud-other-03.properties?group=DEFAULT_GROUP
   profiles:
     active: test
+  redis:
+    host: 192.168.0.155
+    port: 6379
