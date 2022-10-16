@@ -1,6 +1,6 @@
-package com.zhazha.springcloud.controller;
+package com.zhazha.springcloud.dynamic.case01.controller;
 
-import com.zhazha.springcloud.service.RedisGatewayService;
+import com.zhazha.springcloud.dynamic.case01.service.RedisGatewayService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.zhazha.springcloud.service;
+package com.zhazha.springcloud.dynamic.case01.service;
 
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import reactor.core.publisher.Flux;

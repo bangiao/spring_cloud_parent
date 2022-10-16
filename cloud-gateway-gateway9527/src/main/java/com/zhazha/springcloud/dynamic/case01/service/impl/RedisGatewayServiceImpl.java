@@ -1,6 +1,6 @@
-package com.zhazha.springcloud.service.impl;
+package com.zhazha.springcloud.dynamic.case01.service.impl;
 
-import com.zhazha.springcloud.service.RedisGatewayService;
+import com.zhazha.springcloud.dynamic.case01.service.RedisGatewayService;
 import org.springframework.cloud.gateway.event.RefreshRoutesEvent;
 import org.springframework.cloud.gateway.route.RedisRouteDefinitionRepository;
 import org.springframework.cloud.gateway.route.RouteDefinition;
