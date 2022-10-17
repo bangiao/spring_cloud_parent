@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>cloud-api-commons</module>
+        <module>cloud-spring-security</module>
     </modules>
 
     <properties>
