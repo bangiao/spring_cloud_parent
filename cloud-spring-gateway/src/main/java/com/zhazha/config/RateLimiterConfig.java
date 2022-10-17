@@ -5,6 +5,7 @@ import org.springframework.cloud.gateway.route.Route;
 import org.springframework.cloud.gateway.support.ServerWebExchangeUtils;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import reactor.core.publisher.Mono;
 
 import java.util.Objects;
@@ -17,6 +18,7 @@ public class RateLimiterConfig {
 	 *
 	 * @return
 	 */
+	@Primary
 	@Bean("remoteAddrKeyResolver")
 	public KeyResolver remoteAddrKeyResolver() {
 		return exchange -> Mono.just(Objects.requireNonNull(exchange.getRequest().getRemoteAddress()).getAddress().getHostAddress());
