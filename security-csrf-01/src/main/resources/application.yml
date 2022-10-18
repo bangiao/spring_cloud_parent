@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: cloud-security
+  security:
+    user:
+      name: bangiao
+      password: 123

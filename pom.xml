@@ -9,7 +9,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>cloud-api-commons</module>
-        <module>cloud-spring-security</module>
+        <module>security-csrf-01</module>
+        <module>security-csrf-02</module>
     </modules>
 
     <properties>
