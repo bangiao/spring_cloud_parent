@@ -70,12 +70,12 @@ public class SecurityConfig {
 				.and()
 				.formLogin()
 				.loginPage("/login.html")
+				.loginProcessingUrl("/doLogin") // 自定义提交表单请求
 				.permitAll()
 				.and()
 				.csrf()
 				.disable()
-				.build()
-				;
+				.build();
 	}
 	
 }
