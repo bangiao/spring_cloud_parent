@@ -16,7 +16,8 @@ public class DatabaseConfigurationTest implements ApplicationContextAware {
 	@Test
 	public void test02() throws Exception {
 		PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
-		System.out.println(passwordEncoder.encode("123456"));
+		// {bcrypt}$2a$10$D3XCUDK44gjej2EfhBpPM.0h/wvOPH2B8vws.GGXh7J30QmdI62.y
+		System.err.println(passwordEncoder.encode("123456"));
 	}
 	
 	private ApplicationContext applicationContext;

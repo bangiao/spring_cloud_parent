@@ -4,19 +4,30 @@ import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+@EnableWebSecurity
 @Configuration
 public class SecurityConfig {
 	
 	@Bean
-	public InMemoryUserDetailsManager inMemoryUserDetailsManager() {
-		return new InMemoryUserDetailsManager(User.withUsername("admin")
-				.password("123456")
-				.roles("admin", "user")
+	public UserDetailsService inMemoryUserDetailsManager() {
+		InMemoryUserDetailsManager userDetailsManager = new InMemoryUserDetailsManager();
+		userDetailsManager.createUser(User.withUsername("user")
+				.password("$2a$10$2YLsbXVa8APn4lwfnIrPRupVZMQYbiAfgKuL8Y4Y8Rt7eErxWjkEe")
+				.roles("admin", "guest")
 				.build());
+		return userDetailsManager;
+	}
+	
+	@Bean
+	public BCryptPasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
 	}
 	
 	//	/**
@@ -51,6 +62,7 @@ public class SecurityConfig {
 				.authenticated()
 				.and()
 				.formLogin(httpSecurityFormLoginConfigurer -> httpSecurityFormLoginConfigurer.loginPage("/login").permitAll())
+				.userDetailsService(inMemoryUserDetailsManager())
 				.build();
 	}
 	
