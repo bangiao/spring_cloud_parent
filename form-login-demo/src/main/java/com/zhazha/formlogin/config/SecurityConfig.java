@@ -4,16 +4,27 @@ import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-public class SpringSecurity {
+public class SecurityConfig {
 	
-	/**
-	 * 这样会在mysql数据库中 insert 数据
-	 * @param dataSource
-	 * @return
-	 */
+	@Bean
+	public InMemoryUserDetailsManager inMemoryUserDetailsManager() {
+		return new InMemoryUserDetailsManager(User.withUsername("admin")
+				.password("123456")
+				.roles("admin", "user")
+				.build());
+	}
+	
+	//	/**
+//	 * 这样会在mysql数据库中 insert 数据
+//	 *
+//	 * @param dataSource
+//	 * @return
+//	 */
 //	@Bean
 //	public UserDetailsManager user(DataSource dataSource) {
 //		UserDetails user = User.builder()
