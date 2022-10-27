@@ -13,11 +13,6 @@ public class LoginController {
 		return "login";
 	}
 	
-	@GetMapping("/error")
-	public String error() {
-		return "error";
-	}
-	
 	@GetMapping("")
 	public String index() {
 		return "index";
