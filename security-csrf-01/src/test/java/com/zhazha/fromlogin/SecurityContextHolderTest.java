@@ -1,4 +1,4 @@
-package com.zhazha.test;
+package com.zhazha.fromlogin;
 
 import org.junit.Test;
 import org.springframework.security.authentication.TestingAuthenticationToken;

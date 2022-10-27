@@ -1,17 +1,20 @@
-package com.zhazha.test;
+package com.zhazha.formlogin;
 
 import com.zaxxer.hikari.HikariConfig;
-import com.zhazha.formlogin.FormLoginApplication;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.BeansException;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootTest(classes = FormLoginApplication.class)
-public class DatabaseConfigurationTest implements ApplicationContextAware {
+public class DatabaseConfigurationTest {
+//	public static void main(String[] args) throws Exception {
+//		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+//		String encode = passwordEncoder.encode("123456");
+//		System.err.println(encode);
+//		System.err.println(passwordEncoder.matches("123456", encode));
+//	}
 	
 	@Test
 	public void test02() throws Exception {
@@ -26,10 +29,5 @@ public class DatabaseConfigurationTest implements ApplicationContextAware {
 	public void testBean() throws Exception {
 		HikariConfig hikariConfig = applicationContext.getBean(HikariConfig.class);
 		System.out.println(hikariConfig);
-	}
-	
-	@Override
-	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-		this.applicationContext = applicationContext;
 	}
 }

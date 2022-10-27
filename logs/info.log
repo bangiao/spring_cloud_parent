@@ -1,0 +1,386 @@
+19:12:17.992 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 10760 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+19:12:18.007 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+19:12:20.834 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+19:12:20.837 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+19:12:20.839 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+19:12:21.115 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+19:12:22.540 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+19:12:22.767 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+19:12:23.085 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+19:12:23.153 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 5.993 seconds (JVM running for 10.917)
+19:12:25.853 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:49:28.384 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 11884 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+21:49:28.409 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+21:49:31.142 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+21:49:31.143 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+21:49:31.143 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+21:49:31.412 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+21:49:32.860 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+21:49:33.091 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+21:49:33.388 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+21:49:33.440 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 5.873 seconds (JVM running for 11.428)
+21:49:35.974 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:52:37.258 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+21:52:37.286 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+21:52:37.862 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 11884 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+21:52:37.865 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+21:52:39.270 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+21:52:39.271 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+21:52:39.274 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+21:52:39.470 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+21:52:39.981 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-2 - Starting...
+21:52:39.988 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-2 - Start completed.
+21:52:40.062 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+21:52:40.083 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.619 seconds (JVM running for 198.071)
+21:52:43.303 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-2 - Shutdown initiated...
+21:52:43.313 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-2 - Shutdown completed.
+21:52:43.525 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 11884 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+21:52:43.526 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+21:52:44.288 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+21:52:44.288 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+21:52:44.288 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+21:52:44.399 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+21:52:44.692 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-3 - Starting...
+21:52:44.698 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-3 - Start completed.
+21:52:44.750 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+21:52:44.763 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.359 seconds (JVM running for 202.75)
+21:53:35.157 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:55:26.827 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-3 - Shutdown initiated...
+21:55:26.849 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-3 - Shutdown completed.
+21:55:27.154 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 11884 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+21:55:27.155 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+21:55:28.520 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+21:55:28.521 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+21:55:28.521 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+21:55:28.681 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+21:55:29.338 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-4 - Starting...
+21:55:29.346 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-4 - Start completed.
+21:55:29.389 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+21:55:29.409 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.428 seconds (JVM running for 367.397)
+21:55:32.465 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-4 - Shutdown initiated...
+21:55:32.474 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-4 - Shutdown completed.
+21:55:32.671 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 11884 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+21:55:32.673 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+21:55:33.411 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+21:55:33.411 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+21:55:33.412 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+21:55:33.534 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+21:55:33.819 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-5 - Starting...
+21:55:33.824 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-5 - Start completed.
+21:55:33.862 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+21:55:33.884 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.325 seconds (JVM running for 371.871)
+21:55:47.338 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:56:13.492 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 7072 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+21:56:13.516 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+21:56:16.704 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+21:56:16.706 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+21:56:16.707 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+21:56:17.014 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+21:56:18.809 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+21:56:19.043 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+21:56:19.355 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+21:56:19.413 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 6.732 seconds (JVM running for 12.41)
+21:56:21.258 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:56:53.311 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+21:56:53.331 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+21:56:53.643 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 7072 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+21:56:53.644 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+21:56:54.897 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+21:56:54.898 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+21:56:54.898 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+21:56:55.039 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+21:56:55.473 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-2 - Starting...
+21:56:55.482 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-2 - Start completed.
+21:56:55.532 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+21:56:55.547 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.088 seconds (JVM running for 48.543)
+21:56:58.917 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-2 - Shutdown initiated...
+21:56:58.927 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-2 - Shutdown completed.
+21:56:59.152 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 7072 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+21:56:59.153 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+21:57:00.267 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+21:57:00.269 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+21:57:00.274 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+21:57:00.415 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+21:57:00.817 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-3 - Starting...
+21:57:00.822 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-3 - Start completed.
+21:57:00.860 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+21:57:00.873 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.865 seconds (JVM running for 53.87)
+21:58:50.939 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 13076 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+21:58:50.956 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+21:58:53.767 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+21:58:53.768 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+21:58:53.768 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+21:58:54.035 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+21:58:55.524 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+21:58:55.770 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+21:58:56.079 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+21:58:56.136 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 6.009 seconds (JVM running for 11.401)
+21:58:59.508 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:02:37.647 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 8904 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:02:37.664 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:02:40.511 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:02:40.512 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:02:40.513 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:02:40.772 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:02:42.287 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+22:02:42.519 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+22:02:42.816 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:02:42.876 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 6.036 seconds (JVM running for 10.733)
+22:02:45.847 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:04:45.299 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+22:04:45.315 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+22:04:45.595 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 8904 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:04:45.597 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:04:46.653 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:04:46.654 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:04:46.655 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:04:46.809 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:04:47.247 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-2 - Starting...
+22:04:47.254 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-2 - Start completed.
+22:04:47.348 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:04:47.364 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.946 seconds (JVM running for 135.222)
+22:04:49.999 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-2 - Shutdown initiated...
+22:04:50.010 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-2 - Shutdown completed.
+22:04:50.203 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 8904 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:04:50.205 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:04:50.943 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:04:50.944 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:04:50.944 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:04:51.055 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:04:51.350 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-3 - Starting...
+22:04:51.356 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-3 - Start completed.
+22:04:51.392 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:04:51.406 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.318 seconds (JVM running for 139.264)
+22:04:59.213 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:13:43.754 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-3 - Shutdown initiated...
+22:13:43.789 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-3 - Shutdown completed.
+22:13:44.387 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 8904 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:13:44.388 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:13:47.325 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:13:47.328 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:13:47.329 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:13:47.630 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:13:48.795 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-4 - Starting...
+22:13:48.806 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-4 - Start completed.
+22:13:48.907 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:13:48.941 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 5.025 seconds (JVM running for 676.799)
+22:13:52.147 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-4 - Shutdown initiated...
+22:13:52.157 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-4 - Shutdown completed.
+22:13:52.387 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 8904 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:13:52.389 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:13:53.454 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:13:53.455 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:13:53.455 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:13:53.595 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:13:53.923 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-5 - Starting...
+22:13:53.929 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-5 - Start completed.
+22:13:53.975 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:13:53.989 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.74 seconds (JVM running for 681.847)
+22:14:47.040 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:15:14.144 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 1888 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:15:14.180 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:15:17.042 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:15:17.043 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:15:17.044 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:15:17.308 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:15:18.815 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+22:15:19.065 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+22:15:19.407 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:15:19.461 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 6.29 seconds (JVM running for 12.429)
+22:15:21.320 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:29:12.160 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 11748 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:29:12.185 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:29:15.057 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:29:15.059 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:29:15.059 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:29:15.329 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:29:16.757 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+22:29:16.982 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+22:29:17.298 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:29:17.355 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 5.982 seconds (JVM running for 10.995)
+22:29:19.923 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:33:32.555 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+22:33:32.595 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+22:33:32.918 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 11748 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:33:32.919 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:33:34.611 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:33:34.613 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:33:34.614 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:33:34.793 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:33:35.495 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-2 - Starting...
+22:33:35.504 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-2 - Start completed.
+22:33:35.569 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:33:35.585 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.856 seconds (JVM running for 269.224)
+22:33:39.453 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-2 - Shutdown initiated...
+22:33:39.467 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-2 - Shutdown completed.
+22:33:39.700 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 11748 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:33:39.703 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:33:40.488 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:33:40.488 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:33:40.489 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:33:40.604 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:33:40.888 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-3 - Starting...
+22:33:40.894 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-3 - Start completed.
+22:33:40.930 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:33:40.943 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.371 seconds (JVM running for 274.583)
+22:33:46.409 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:34:48.591 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:34:48.616 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:34:51.442 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:34:51.443 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:34:51.444 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:34:51.719 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:34:53.141 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+22:34:53.368 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+22:34:53.674 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:34:53.759 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 6.131 seconds (JVM running for 11.156)
+22:34:57.222 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:36:28.164 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+22:36:28.183 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+22:36:28.544 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:36:28.545 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:36:30.265 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:36:30.265 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:36:30.268 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:36:30.417 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:36:30.924 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-2 - Starting...
+22:36:30.932 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-2 - Start completed.
+22:36:30.981 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:36:30.997 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.684 seconds (JVM running for 108.394)
+22:36:33.844 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-2 - Shutdown initiated...
+22:36:33.894 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-2 - Shutdown completed.
+22:36:34.354 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:36:34.356 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:36:35.233 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:36:35.234 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:36:35.234 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:36:35.389 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:36:35.758 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-3 - Starting...
+22:36:35.766 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-3 - Start completed.
+22:36:35.811 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:36:35.826 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.791 seconds (JVM running for 113.223)
+22:36:35.863 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:37:16.950 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-3 - Shutdown initiated...
+22:37:16.962 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-3 - Shutdown completed.
+22:37:17.256 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:37:17.257 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:37:18.554 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:37:18.555 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:37:18.555 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:37:18.690 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:37:19.184 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-4 - Starting...
+22:37:19.192 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-4 - Start completed.
+22:37:19.239 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:37:19.254 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.186 seconds (JVM running for 156.65)
+22:37:22.571 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-4 - Shutdown initiated...
+22:37:22.581 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-4 - Shutdown completed.
+22:37:22.775 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:37:22.776 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:37:23.925 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:37:23.925 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:37:23.926 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:37:24.039 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:37:24.360 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-5 - Starting...
+22:37:24.366 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-5 - Start completed.
+22:37:24.402 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:37:24.414 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.748 seconds (JVM running for 161.811)
+22:37:30.973 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-5 - Shutdown initiated...
+22:37:30.982 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-5 - Shutdown completed.
+22:37:31.259 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:37:31.262 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:37:32.703 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:37:32.704 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:37:32.704 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:37:32.838 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:37:33.249 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-6 - Starting...
+22:37:33.256 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-6 - Start completed.
+22:37:33.303 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:37:33.319 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.223 seconds (JVM running for 170.715)
+22:37:36.077 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-6 - Shutdown initiated...
+22:37:36.086 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-6 - Shutdown completed.
+22:37:36.286 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:37:36.288 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:37:36.999 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:37:36.999 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:37:37.000 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:37:37.117 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:37:37.395 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-7 - Starting...
+22:37:37.400 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-7 - Start completed.
+22:37:37.434 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:37:37.447 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.268 seconds (JVM running for 174.843)
+22:37:55.082 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:45:01.361 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-7 - Shutdown initiated...
+22:45:01.368 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-7 - Shutdown completed.
+22:45:01.682 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:45:01.683 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:45:03.132 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:45:03.132 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:45:03.133 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:45:03.280 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:45:03.720 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-8 - Starting...
+22:45:03.728 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-8 - Start completed.
+22:45:03.804 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:45:03.863 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.37 seconds (JVM running for 621.259)
+22:45:07.058 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-8 - Shutdown initiated...
+22:45:07.066 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-8 - Shutdown completed.
+22:45:07.546 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:45:07.548 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:45:09.529 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:45:09.530 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:45:09.533 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:45:09.797 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:45:10.339 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-9 - Starting...
+22:45:10.344 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-9 - Start completed.
+22:45:10.382 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:45:10.399 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 3.154 seconds (JVM running for 627.795)
+22:45:23.302 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:57:30.052 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-9 - Shutdown initiated...
+22:57:30.171 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-9 - Shutdown completed.
+22:57:30.589 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:57:30.590 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:57:32.474 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:57:32.476 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:57:32.476 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:57:32.620 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:57:33.008 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-10 - Starting...
+22:57:33.014 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-10 - Start completed.
+22:57:33.079 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:57:33.105 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.779 seconds (JVM running for 1370.501)
+22:57:36.086 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-10 - Shutdown initiated...
+22:57:36.099 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-10 - Shutdown completed.
+22:57:36.489 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:57:36.490 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:57:37.685 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:57:37.686 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:57:37.686 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:57:37.843 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:57:38.133 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-11 - Starting...
+22:57:38.139 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-11 - Start completed.
+22:57:38.175 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:57:38.188 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.927 seconds (JVM running for 1375.584)
+22:57:45.103 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:59:31.622 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-11 - Shutdown initiated...
+22:59:31.637 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-11 - Shutdown completed.
+22:59:32.009 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:59:32.010 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:59:33.837 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:59:33.838 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:59:33.838 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:59:33.968 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:59:34.496 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-12 - Starting...
+22:59:34.503 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-12 - Start completed.
+22:59:34.559 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:59:34.577 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 2.782 seconds (JVM running for 1491.974)
+22:59:37.308 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-12 - Shutdown initiated...
+22:59:37.315 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-12 - Shutdown completed.
+22:59:37.544 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting FormLoginApplication using Java 11.0.14 on DESKTOP-FOS9FAS with PID 12420 (D:\programs\codes\java\springcloud_study_parent\form-login-demo\target\classes started by zhazha in D:\programs\codes\java\springcloud_study_parent)
+22:59:37.545 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+22:59:38.373 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-8080"]
+22:59:38.374 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+22:59:38.374 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:59:38.497 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+22:59:38.769 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-13 - Starting...
+22:59:38.774 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-13 - Start completed.
+22:59:38.822 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-8080"]
+22:59:38.842 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started FormLoginApplication in 1.405 seconds (JVM running for 1496.238)
+23:00:27.030 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
