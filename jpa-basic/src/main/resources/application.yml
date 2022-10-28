@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: jpa-basic
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: mysql
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/jpa?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
