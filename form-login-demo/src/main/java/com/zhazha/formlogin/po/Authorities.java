@@ -1,4 +1,4 @@
-package com.zhazha.formlogin.entity;
+package com.zhazha.formlogin.po;
 
 import lombok.Data;
 

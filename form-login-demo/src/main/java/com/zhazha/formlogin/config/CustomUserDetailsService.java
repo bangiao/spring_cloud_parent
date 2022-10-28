@@ -1,6 +1,6 @@
 package com.zhazha.formlogin.config;
 
-import com.zhazha.formlogin.entity.Users;
+import com.zhazha.formlogin.po.Users;
 import com.zhazha.formlogin.repository.AuthoritiesRepository;
 import com.zhazha.formlogin.repository.UsersRepository;
 import org.springframework.data.domain.Example;

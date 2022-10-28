@@ -159,3 +159,37 @@
 03:17:02.783 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started UsersRepositoryTest in 15.506 seconds (JVM running for 20.237)
 03:17:03.594 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
 03:17:03.619 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+03:19:19.867 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting DatabaseConfigurationTest using Java 11.0.14 on DESKTOP-FOS9FAS with PID 11196 (started by zhazha in D:\programs\codes\java\springcloud_study_parent\form-login-demo)
+03:19:19.877 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+03:19:23.946 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+03:19:24.387 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+03:19:24.593 INFO  hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation()/31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+03:19:24.739 INFO  hibernate.Version.logVersion()/44 - HHH000412: Hibernate ORM core version 5.6.9.Final
+03:19:25.231 INFO  hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>()/56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03:19:26.978 INFO  hibernate.dialect.Dialect.<init>()/175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03:19:28.149 INFO  hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService()/52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03:19:33.390 INFO  springframework.boot.StartupInfoLogger.logStarted()/61 - Started DatabaseConfigurationTest in 14.211 seconds (JVM running for 19.456)
+03:19:33.811 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+03:19:33.835 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+03:25:15.683 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting UsersRepositoryTest using Java 11.0.14 on DESKTOP-FOS9FAS with PID 6844 (started by zhazha in D:\programs\codes\java\springcloud_study_parent\form-login-demo)
+03:25:15.694 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+03:25:19.521 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+03:25:19.935 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+03:25:20.131 INFO  hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation()/31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+03:25:20.258 INFO  hibernate.Version.logVersion()/44 - HHH000412: Hibernate ORM core version 5.6.9.Final
+03:25:21.053 INFO  hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>()/56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03:25:23.055 INFO  hibernate.dialect.Dialect.<init>()/175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03:25:24.532 INFO  hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService()/52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03:25:27.657 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+03:25:27.687 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+03:27:56.927 INFO  springframework.boot.StartupInfoLogger.logStarting()/55 - Starting UsersRepositoryTest using Java 11.0.14 on DESKTOP-FOS9FAS with PID 4028 (started by zhazha in D:\programs\codes\java\springcloud_study_parent\form-login-demo)
+03:27:56.937 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/634 - No active profile set, falling back to 1 default profile: "default"
+03:28:01.013 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+03:28:01.499 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+03:28:01.711 INFO  hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation()/31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+03:28:01.889 INFO  hibernate.Version.logVersion()/44 - HHH000412: Hibernate ORM core version 5.6.9.Final
+03:28:02.395 INFO  hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>()/56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+03:28:04.153 INFO  hibernate.dialect.Dialect.<init>()/175 - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+03:28:05.402 INFO  hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService()/52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+03:28:06.548 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+03:28:06.574 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.

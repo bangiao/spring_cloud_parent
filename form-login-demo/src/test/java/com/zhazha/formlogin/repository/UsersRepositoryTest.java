@@ -1,7 +1,7 @@
 package com.zhazha.formlogin.repository;
 
 import com.zhazha.formlogin.dto.UsersDTO;
-import com.zhazha.formlogin.entity.Users;
+import com.zhazha.formlogin.po.Users;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Example;
@@ -12,8 +12,6 @@ import javax.persistence.criteria.Predicate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class UsersRepositoryTest {
@@ -58,5 +56,11 @@ class UsersRepositoryTest {
 		Example<Users> example = Example.of(users, matching);
 		List<Users> usersList = usersRepository.findAll(example);
 		usersList.forEach(System.out::println);
+	}
+	
+	@Test
+	void findUsersByUsername02() {
+		UsersDTO user = usersRepository.findUsersByUsername02("admin");
+		System.err.println(user);
 	}
 }

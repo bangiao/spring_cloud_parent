@@ -7,7 +7,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@SpringBootTest(classes = FormLoginApplication.class)
+@SpringBootTest
 public class DatabaseConfigurationTest {
 //	public static void main(String[] args) throws Exception {
 //		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();

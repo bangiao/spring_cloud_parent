@@ -1,11 +1,10 @@
-package com.zhazha.formlogin.entity;
+package com.zhazha.formlogin.po;
 
 import lombok.Data;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * (Users)实体类
@@ -15,6 +14,7 @@ import java.io.Serializable;
  */
 @Data
 @Entity
+@Table(name = "users")
 public class Users implements Serializable {
     private static final long serialVersionUID = -12974772985897054L;
     @Id
