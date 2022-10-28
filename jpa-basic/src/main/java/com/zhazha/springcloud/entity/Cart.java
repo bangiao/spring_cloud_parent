@@ -1,9 +1,6 @@
 package com.zhazha.springcloud.entity;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.Hibernate;
 import javax.persistence.*;
 import java.util.LinkedHashSet;
