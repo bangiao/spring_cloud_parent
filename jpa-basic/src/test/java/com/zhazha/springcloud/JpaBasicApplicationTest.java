@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 
 import javax.annotation.Resource;
+import javax.persistence.Persistence;
 import java.util.HashSet;
 
 @SpringBootTest
@@ -31,8 +32,13 @@ class JpaBasicApplicationTest {
 	
 	@AfterEach
 	void tearDown() {
+		// session 需要关闭
+		session.close();
 	}
 	
+	@Test
+	public void test01() throws Exception {
+	}
 	
 	@Test
 	public void testUpdate() throws Exception {
