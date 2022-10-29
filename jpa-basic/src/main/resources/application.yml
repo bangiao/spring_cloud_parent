@@ -20,7 +20,7 @@ spring:
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-logging:
-  level:
-    "ROOT": DEBUG
-    "org.hibernate.type.descriptor.sql.BasicBinder": TRACE
+#logging:
+#  level:
+#    "ROOT": DEBUG
+#    "org.hibernate.type.descriptor.sql.BasicBinder": TRACE
