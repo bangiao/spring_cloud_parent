@@ -15,6 +15,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserServiceTest {
 	@Resource
 	private UserRepository userRepository;
+
+	@Test
+	public void test01() throws Exception {
+	}
 	
 	@Test
 	void event() {

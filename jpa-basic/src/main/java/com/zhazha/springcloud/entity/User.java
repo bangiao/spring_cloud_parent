@@ -3,31 +3,33 @@ package com.zhazha.springcloud.entity;
 import com.zhazha.springcloud.event.UserEvent;
 import lombok.*;
 import org.springframework.data.domain.DomainEvents;
-
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.List;
 
 @Entity
-@Table(name = "user")
+@Table(name = "user", uniqueConstraints = {
+		@UniqueConstraint(name = "uc_user_username", columnNames = {"username"})
+})
 @Getter
 @Setter
 @ToString
 @RequiredArgsConstructor
+@NoArgsConstructor
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id", nullable = false)
 	private Integer id;
-	
+
 	@Column(name = "username", nullable = false)
 	@NonNull
 	private String username;
-	
+
 	@Column(name = "password")
 	@NonNull
 	private String password;
-	
+
 	/**
 	 * 这里的返回值都会被发布出去
 	 *
@@ -40,5 +42,5 @@ public class User {
 		// 再次发送出去
 		return List.of(new UserEvent(this.id));
 	}
-	
+
 }
