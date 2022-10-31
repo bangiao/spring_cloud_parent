@@ -1,9 +1,10 @@
 package com.zhazha.formlogin.po;
 
-import lombok.Data;
-
+import lombok.*;
+import org.hibernate.Hibernate;
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * (Authorities)实体类
@@ -11,7 +12,10 @@ import java.io.Serializable;
  * @author makejava
  * @since 2022-10-27 23:59:15
  */
-@Data
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
 @Entity
 @Table(name = "authorities")
 public class Authorities implements Serializable {
@@ -21,6 +25,28 @@ public class Authorities implements Serializable {
 	private String username;
 	
 	private String authority;
-	
+
+	@MapsId
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "username")
+	@ToString.Exclude
+	private Users users;
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) {
+			return true;
+		}
+		if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) {
+			return false;
+		}
+		Authorities that = (Authorities) o;
+		return username != null && Objects.equals(username, that.username);
+	}
+
+	@Override
+	public int hashCode() {
+		return getClass().hashCode();
+	}
 }
 

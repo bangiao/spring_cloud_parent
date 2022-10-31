@@ -57,10 +57,10 @@ class UsersRepositoryTest {
 		List<Users> usersList = usersRepository.findAll(example);
 		usersList.forEach(System.out::println);
 	}
-	
-	@Test
-	void findUsersByUsername02() {
-		UsersDTO user = usersRepository.findUsersByUsername02("admin");
-		System.err.println(user);
+
+    @Test
+    void testFindUsersByUsername02() {
+		UsersDTO admin = usersRepository.findUsersByUsername02("admin");
+		System.err.println(admin);
 	}
 }

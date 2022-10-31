@@ -1,9 +1,0 @@
-19:13:00.906 WARN  apache.juli.logging.DirectJDKLog.log()/173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,316] milliseconds.
-21:50:30.798 WARN  apache.juli.logging.DirectJDKLog.log()/173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,351] milliseconds.
-21:56:27.063 WARN  apache.juli.logging.DirectJDKLog.log()/173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,320] milliseconds.
-21:59:02.653 WARN  apache.juli.logging.DirectJDKLog.log()/173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,399] milliseconds.
-22:02:57.352 WARN  apache.juli.logging.DirectJDKLog.log()/173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,391] milliseconds.
-22:12:30.460 WARN  zaxxer.hikari.pool.HikariPool$HouseKeeper.run()/788 - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=6m38s978ms731µs800ns).
-22:15:29.410 WARN  apache.juli.logging.DirectJDKLog.log()/173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,277] milliseconds.
-22:31:08.856 WARN  apache.juli.logging.DirectJDKLog.log()/173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,272] milliseconds.
-22:34:59.835 WARN  apache.juli.logging.DirectJDKLog.log()/173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,381] milliseconds.

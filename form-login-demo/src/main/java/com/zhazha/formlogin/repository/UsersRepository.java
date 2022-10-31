@@ -14,6 +14,6 @@ public interface UsersRepository extends JpaRepository<Users, String>, JpaSpecif
 	
 	<T> Optional<T> findUsersDTOByUsername(String username, Class<T> type);
 	
-	@Query(value = "select new com.zhazha.formlogin.dto.UsersDTO(u.username, u.password) from users u where u.username = :username and u.enabled = true")
+	@Query(value = "select new com.zhazha.formlogin.dto.UsersDTO(u.username, u.password) from Users u where u.username = :username and u.enabled = true")
 	UsersDTO findUsersByUsername02(@Param("username") String username);
 }
