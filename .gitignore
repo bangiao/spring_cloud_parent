@@ -1,2 +1,6 @@
 /.idea
 /**/target/
+/form-login-demo/logs/
+/logs/error.log
+/logs/info.log
+/logs/warn.log
