@@ -1,11 +1,15 @@
 package com.zhazha.formlogin.config;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+
+import java.util.HashMap;
 
 @Configuration
 public class SecurityConfig {
@@ -29,6 +33,46 @@ public class SecurityConfig {
 	public BCryptPasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
+	
+	@Bean
+	public ObjectMapper objectMapper() {
+		return new ObjectMapper();
+	}
+	
+	
+	@Bean
+	public SecurityFilterChain securityWebFilterChain(HttpSecurity httpSecurity, ObjectMapper objectMapper) throws Exception {
+		return httpSecurity.authorizeHttpRequests()
+				.antMatchers("/js/**", "/css/**", "/images/**")
+				.permitAll()
+				.mvcMatchers("/hello")
+				.permitAll() // 白名单 允许
+				.anyRequest()
+				.authenticated()
+				.and()
+				.formLogin()
+				.loginPage("/login") // 配置了这个, loginProcessingUrl 就必须跟着配置
+				.loginProcessingUrl("/doLogin")
+				.usernameParameter("name")
+				.passwordParameter("pwd")
+//				.defaultSuccessUrl("/")
+//				.successForwardUrl("/")
+				.successHandler((request, response, authentication) -> {
+					HashMap<String, Object> retHashMap = new HashMap<>();
+					retHashMap.put("msg", "登录成功");
+					retHashMap.put("status", HttpStatus.OK.value());
+					retHashMap.put("authentication", authentication);
+					response.setContentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
+					String s = objectMapper.writeValueAsString(retHashMap);
+					response.getWriter().println(s);
+				})
+				.permitAll()
+				.and()
+				.csrf()
+				.disable()
+				.build();
+	}
+	
 	
 	//	/**
 //	 * 这样会在mysql数据库中 insert 数据
@@ -58,21 +102,11 @@ public class SecurityConfig {
 	已弃用
 Use a org.springframework.security.web.SecurityFilterChain Bean to configure HttpSecurity or a WebSecurityCustomizer Bean to configure WebSecurity
 	 */
-	@Bean
-	public WebSecurityCustomizer webSecurityCustomizer() {
-		return web -> web.ignoring()
-//				.antMatchers("/js/**", "/css/**", "/images/**", "/login", "/logout");
-				.antMatchers("/js/**", "/css/**", "/images/**");
-	}
-	
-	@Bean
-	public SecurityFilterChain securityWebFilterChain(HttpSecurity httpSecurity) throws Exception {
-		return httpSecurity.authorizeHttpRequests()
-				.antMatchers("/hello").permitAll()
-				.anyRequest().authenticated()
-				.and().formLogin()
-				.and().csrf().disable().build();
-	}
+//	@Bean
+//	public WebSecurityCustomizer webSecurityCustomizer() {
+//		return web -> web.ignoring()
+//				.antMatchers("/js/**", "/css/**", "/images/**");
+//	}
 
 //	@SneakyThrows(Exception.class)
 //	@Bean
