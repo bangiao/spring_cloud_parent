@@ -2,8 +2,10 @@ package com.zhazha.formlogin.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class SecurityConfig {
@@ -12,7 +14,7 @@ public class SecurityConfig {
 	public CustomUserDetailsService detailsService() {
 		return new CustomUserDetailsService();
 	}
-	
+
 //	@Bean
 //	public UserDetailsService inMemoryUserDetailsManager() {
 //		InMemoryUserDetailsManager userDetailsManager = new InMemoryUserDetailsManager();
@@ -52,12 +54,26 @@ public class SecurityConfig {
 //		return users;
 //	}
 	
+	/*
+	已弃用
+Use a org.springframework.security.web.SecurityFilterChain Bean to configure HttpSecurity or a WebSecurityCustomizer Bean to configure WebSecurity
+	 */
 	@Bean
 	public WebSecurityCustomizer webSecurityCustomizer() {
 		return web -> web.ignoring()
+//				.antMatchers("/js/**", "/css/**", "/images/**", "/login", "/logout");
 				.antMatchers("/js/**", "/css/**", "/images/**");
 	}
 	
+	@Bean
+	public SecurityFilterChain securityWebFilterChain(HttpSecurity httpSecurity) throws Exception {
+		return httpSecurity.authorizeHttpRequests()
+				.antMatchers("/hello").permitAll()
+				.anyRequest().authenticated()
+				.and().formLogin()
+				.and().csrf().disable().build();
+	}
+
 //	@SneakyThrows(Exception.class)
 //	@Bean
 //	public SecurityFilterChain filterChain(HttpSecurity http) {
