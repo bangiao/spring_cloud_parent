@@ -26,37 +26,37 @@ public class MultipleConfig {
     @Configuration
     @EnableTransactionManagement
     @EnableJpaRepositories(
-            entityManagerFactoryRef="firstEntityManagerFactory",
-            transactionManagerRef="firstTransactionManager",
-            basePackages= { "com.zhazha.springcloud.first.entity" }) //设置Repository所在位置
+            entityManagerFactoryRef="jpaEntityManagerFactory",
+            transactionManagerRef="jpaTransactionManager",
+            basePackages= { "com.zhazha.springcloud.jpa.entity" }) //设置Repository所在位置
     static class FirstConfig {
-        @Resource(name = "firstDataSource")
-        private DataSource firstDataSource;
-        @Resource(name = "firstJpaProperties")
+        @Resource(name = "jpaDataSource")
+        private DataSource jpaDataSource;
+        @Resource(name = "jpaJpaProperties")
         private JpaProperties jpaProperties;
         @Resource
         private HibernateProperties hibernateProperties;
 
         @Primary
         @Bean
-        public LocalContainerEntityManagerFactoryBean firstEntityManagerFactory(EntityManagerFactoryBuilder builder) {
-            return builder.dataSource(firstDataSource)
-                    .packages("com.zhazha.springcloud.first.entity")
-                    .persistenceUnit("firstPersistenceUnit")
+        public LocalContainerEntityManagerFactoryBean jpaEntityManagerFactory(EntityManagerFactoryBuilder builder) {
+            return builder.dataSource(jpaDataSource)
+                    .packages("com.zhazha.springcloud.jpa.entity")
+                    .persistenceUnit("jpaPersistenceUnit")
                     .properties(hibernateProperties.determineHibernateProperties(jpaProperties.getProperties(), new HibernateSettings()))
                     .build();
         }
 
         @Primary
         @Bean
-        public EntityManager firstEntityManager(EntityManagerFactoryBuilder builder) {
-            return Objects.requireNonNull(firstEntityManagerFactory(builder).getObject()).createEntityManager();
+        public EntityManager jpaEntityManager(EntityManagerFactoryBuilder builder) {
+            return Objects.requireNonNull(jpaEntityManagerFactory(builder).getObject()).createEntityManager();
         }
 
         @Primary
         @Bean
-        public PlatformTransactionManager firstTransactionManager(EntityManagerFactoryBuilder builder) {
-            return new JpaTransactionManager(Objects.requireNonNull(firstEntityManagerFactory(builder).getObject()));
+        public PlatformTransactionManager jpaTransactionManager(EntityManagerFactoryBuilder builder) {
+            return new JpaTransactionManager(Objects.requireNonNull(jpaEntityManagerFactory(builder).getObject()));
         }
         
     }
@@ -64,34 +64,34 @@ public class MultipleConfig {
     @Configuration
     @EnableTransactionManagement
     @EnableJpaRepositories(
-            entityManagerFactoryRef="secondEntityManagerFactory",
-            transactionManagerRef="secondTransactionManager",
-            basePackages= { "com.zhazha.springcloud.first.entity" }) //设置Repository所在位置
+            entityManagerFactoryRef="securityEntityManagerFactory",
+            transactionManagerRef="securityTransactionManager",
+            basePackages= { "com.zhazha.springcloud.jpa.entity" }) //设置Repository所在位置
     static class SecondConfig {
-        @Resource(name = "secondDataSource")
-        private DataSource firstDataSource;
-        @Resource(name = "secondJpaProperties")
+        @Resource(name = "securityDataSource")
+        private DataSource jpaDataSource;
+        @Resource(name = "securityJpaProperties")
         private JpaProperties jpaProperties;
         @Resource
         private HibernateProperties hibernateProperties;
 
         @Bean
-        public LocalContainerEntityManagerFactoryBean secondEntityManagerFactory(EntityManagerFactoryBuilder builder) {
-            return builder.dataSource(firstDataSource)
-                    .packages("com.zhazha.springcloud.second.entity")
-                    .persistenceUnit("secondPersistenceUnit")
+        public LocalContainerEntityManagerFactoryBean securityEntityManagerFactory(EntityManagerFactoryBuilder builder) {
+            return builder.dataSource(jpaDataSource)
+                    .packages("com.zhazha.springcloud.security.entity")
+                    .persistenceUnit("securityPersistenceUnit")
                     .properties(hibernateProperties.determineHibernateProperties(jpaProperties.getProperties(), new HibernateSettings()))
                     .build();
         }
 
         @Bean
-        public EntityManager secondEntityManager(EntityManagerFactoryBuilder builder) {
-            return Objects.requireNonNull(secondEntityManagerFactory(builder).getObject()).createEntityManager();
+        public EntityManager securityEntityManager(EntityManagerFactoryBuilder builder) {
+            return Objects.requireNonNull(securityEntityManagerFactory(builder).getObject()).createEntityManager();
         }
 
         @Bean
-        public PlatformTransactionManager secondTransactionManager(EntityManagerFactoryBuilder builder) {
-            return new JpaTransactionManager(Objects.requireNonNull(secondEntityManagerFactory(builder).getObject()));
+        public PlatformTransactionManager securityTransactionManager(EntityManagerFactoryBuilder builder) {
+            return new JpaTransactionManager(Objects.requireNonNull(securityEntityManagerFactory(builder).getObject()));
         }
     }
 
@@ -99,14 +99,14 @@ public class MultipleConfig {
     static class DatasourceConfig {
         @Primary
         @Bean
-        @ConfigurationProperties(prefix = "spring.datasource.first")
-        public DataSource firstDataSource() {
+        @ConfigurationProperties(prefix = "spring.datasource.jpa")
+        public DataSource jpaDataSource() {
             return DataSourceBuilder.create().build();
         }
 
         @Bean
-        @ConfigurationProperties(prefix = "spring.datasource.second")
-        public DataSource secondDataSource() {
+        @ConfigurationProperties(prefix = "spring.datasource.security")
+        public DataSource securityDataSource() {
             return DataSourceBuilder.create().build();
         }
     }
@@ -115,14 +115,14 @@ public class MultipleConfig {
     static class JpaConfig {
         @Primary
         @Bean
-        @ConfigurationProperties(prefix = "spring.jpa.first")
-        public JpaProperties firstJpaProperties() {
+        @ConfigurationProperties(prefix = "spring.jpa.jpa")
+        public JpaProperties jpaJpaProperties() {
             return new JpaProperties();
         }
 
         @Bean
-        @ConfigurationProperties(prefix = "spring.jpa.second")
-        public JpaProperties secondJpaProperties() {
+        @ConfigurationProperties(prefix = "spring.jpa.security")
+        public JpaProperties securityJpaProperties() {
             return new JpaProperties();
         }
     }

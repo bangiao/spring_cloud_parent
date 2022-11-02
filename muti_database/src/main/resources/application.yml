@@ -4,7 +4,7 @@ spring:
   application:
     name: muti_database
   jpa:
-    first:
+    jpa:
       database-platform: org.hibernate.dialect.MySQL8Dialect
       show-sql: true
       open-in-view: false
@@ -13,7 +13,7 @@ spring:
       hibernate:
         ddl-auto: update
       database: mysql
-    second:
+    security:
       database-platform: org.hibernate.dialect.MySQL8Dialect
       show-sql: true
       open-in-view: false
@@ -23,13 +23,13 @@ spring:
         ddl-auto: update
       database: mysql
   datasource:
-    first:
+    jpa:
       jdbc-url: jdbc:mysql://127.0.0.1:3306/jpa?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
       username: root
       password: 123456
       driver-class-name: com.mysql.cj.jdbc.Driver
       type: com.alibaba.druid.pool.DruidDataSource
-    second:
+    security:
       jdbc-url: jdbc:mysql://127.0.0.1:3306/spring_security?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
       username: root
       password: 123456
