@@ -1,0 +1,37 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: muti_database
+  jpa:
+    first:
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+      show-sql: true
+      open-in-view: false
+      properties:
+        "hibernate.format_sql": true
+      hibernate:
+        ddl-auto: update
+      database: mysql
+    second:
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+      show-sql: true
+      open-in-view: false
+      properties:
+        "hibernate.format_sql": true
+      hibernate:
+        ddl-auto: update
+      database: mysql
+  datasource:
+    first:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/jpa?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+    second:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/spring_security?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
